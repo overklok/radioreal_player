@@ -1,0 +1,339 @@
+<html>
+<head>
+    <script src="js/howler.core.min.js"></script>
+
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/solid.min.css">
+
+    <link rel="stylesheet" href="css/radio.css">
+</head>
+
+<body>
+    <div class="radio__header">
+        <div class="logo"></div>
+    </div>
+    <div class="radio__body">
+        <div id="player" class="player">
+            <div class="player__body">
+                <div id="bars" class="bars">
+                    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                    <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                </div>
+
+                <div id="btnstat" class="btnstat"></div>
+                <button id="button" class="btn btn_active">
+                    <i class="fas fa-play"></i>
+    <!--                <i class="fas fa-pause"></i>-->
+    <!--                <i class="fas fa-stop"></i>-->
+                </button>
+
+                <div class="player__bar pbar">
+                    <div class="pbar__controls">
+                        <div class="volume">
+                            <div id="volume-toggle" class="volume__toggle">
+                                <i class="fas fa-volume-up"></i>
+                            </div>
+                            <div id="volume-slider" class="volume__slider vslider vslider_visible">
+                                <input id="volume-bar" type="range" orient="vertical" class="vslider__scale">
+                            </div>
+                        </div>
+                        <span id="live" class="live">
+                            <i class="live__indicator"></i>
+                            Live
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="player__footer pfooter">
+                <div class="pfooter__left">
+                    <h1 class="title">Радио RealFM</h1>
+                    <h5 id="subtitle" class="subtitle">Проигрывается</h5>
+                </div>
+                <div class="pfooter__right">
+<!--                    <div class="summary"><span id="counter">24</span> <i class="fas fa-headphones"></i></div>-->
+                    <div class="summary"><span id="clock">1:02:34</span> <i class="fas fa-clock"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="application/javascript">
+        const COLORS = ['#006996', '#fc0000'];
+
+        const __bar_container = document.getElementById('bars');
+        const __volume_toggle = document.getElementById('volume-toggle');
+        const __volume_slider = document.getElementById('volume-slider');
+        const __volume_bar = document.getElementById('volume-bar');
+        const __live = document.getElementById('live');
+        const __subtitle = document.getElementById('subtitle');
+        const __clock = document.getElementById('clock');
+        const __counter = document.getElementById('counter');
+        const __button = document.getElementById('button');
+        const __btnstat = document.getElementById('btnstat');
+
+    	var sound = undefined;
+    	var timer = undefined;
+
+    	var time = 0;
+    	var state = {};
+    	var play_after_stop = false;
+
+    	barColor();
+    	syncState({
+            playback: 'stop',
+            volume: .8,
+            mute: false,
+            live: null,
+    	});
+
+    	__button.addEventListener('click', togglePlayer);
+        __volume_bar.addEventListener('change', setVolume);
+        __volume_toggle.addEventListener('click', toggleMute);
+        __live.addEventListener('click', resetPlayback);
+
+        updateClock();
+        // refreshListeners();
+
+        // setInterval(refreshListeners, 5000);
+
+    	function togglePlayer() {
+    	    switch (state.playback) {
+                case "stop":    play();     break;
+                case "pause":   play();     break;
+                case "play":    pause();    break;
+            }
+        }
+
+        function toggleMute() {
+    	    syncState({mute: !state.mute});
+        }
+
+        function setVolume() {
+    	    const level = Number(__volume_bar.value) / 100;
+    	    syncState({volume: level});
+        }
+
+        function resetPlayback() {
+            play_after_stop = true;
+            stop();
+        }
+
+        function syncState(newState) {
+    	    if (newState.playback != null && newState.playback != state.playback) {
+                switch (newState.playback) {
+                    case "stop":
+                        __button.innerHTML = '<i class="fas fa-play"></i>';
+                        __subtitle.innerText = 'Остановлено';
+                        break;
+                    case "pause":
+                        __button.innerHTML = '<i class="fas fa-play"></i>';
+                        __subtitle.innerText = 'Пристановлено';
+                        break;
+                    case "play":
+                        __button.innerHTML = '<i class="fas fa-pause"></i>';
+                        __subtitle.innerText = 'Проигрывается';
+                        break;
+                }
+            }
+
+    	    if (newState.volume != null && newState.volume != state.volume) {
+    	        volume(newState.volume);
+            }
+
+    	    if (newState.mute !== null && newState.mute != state.mute) {
+    	        mute(newState.mute);
+            }
+
+            Object.assign(state, newState);
+
+    	    if ((state.volume > 0 && state.mute === false) && state.playback === 'play') {
+                __bar_container.classList.add('bars_active');
+            } else {
+                __bar_container.classList.remove('bars_active');
+            }
+
+            if (state.playback === 'play') {
+                __btnstat.classList.add('btnstat_active');
+            } else {
+                __btnstat.classList.remove('btnstat_active');
+            }
+
+            if (state.live) {
+                __live.classList.add('live_active');
+            } else {
+                __live.classList.remove('live_active');
+            }
+        }
+
+    	function play() {
+    		if (!sound) {
+	    		sound = new Howl({
+			        src: 'https://mediaplus.radio-tochka.com/mediaplus/',
+			        html5: true,
+			        format: ['mp3', 'aac'],
+                    onplay: onplay,
+                    onpause: onpause,
+                    onstop: onstop,
+                    onseek: onseek,
+                    volume: state.volume,
+                    mute: state.mute,
+			    });
+	    	}
+
+	    	sound.play();
+    		syncState({playback: "locked"});
+    	}
+
+    	function stop() {
+    		sound && sound.stop();
+    		syncState({playback: "locked"});
+    	}
+
+    	function pause() {
+    		sound && sound.pause();
+    		syncState({playback: "locked"});
+    	}
+
+    	function volume(vol) {
+    		sound && sound.volume(vol);
+
+            __volume_bar.value = vol * 100;
+    	}
+
+    	function mute(enabled) {
+    		sound && sound.mute(enabled);
+
+    		if (enabled) {
+    		    __volume_toggle.innerHTML = '<i class="fas fa-volume-mute"></i>';
+            } else {
+    		    __volume_toggle.innerHTML = '<i class="fas fa-volume-up"></i>';
+            }
+    	}
+
+    	function onplay() {
+    	    syncState({playback: "play", live: state.live === null ? true: state.live});
+    	    timer = setInterval(updateClock, 1000);
+        }
+
+        function onpause() {
+            syncState({playback: "pause", live: false});
+            timer && clearInterval(timer);
+        }
+
+        function onstop() {
+    	    syncState({playback: "stop", live: null});
+
+    	    if (play_after_stop) {
+    	        play_after_stop = false;
+    	        play();
+            }
+
+    	    timer && clearInterval(timer);
+        }
+
+        function onseek() {
+            console.log('seek');
+        }
+
+        function refreshListeners() {
+    	    const myHeaders = new Headers();
+            myHeaders.append('Content-Type', 'text/html');
+            myHeaders.append('Accept', 'text/html');
+
+            fetch('http://radio-tochka.com:6445/7.html', {
+                mode: 'no-cors',
+                method: 'get',
+                headers: myHeaders
+            }).then(function(response) {
+                console.log(response.body)
+
+                response.text().then(function(text) {
+                    console.log(text);
+                })
+            }).catch(function(err) {
+              console.log(err)
+            });
+        }
+
+        function updateClock() {
+    	    __clock.innerText = String(new Date(time * 1000).toISOString().substr(11, 8));
+    	    time += 1;
+        }
+
+    	function barColor() {
+    	    const bars = document.getElementsByClassName('bar');
+
+    	    for (let i = 0; i < bars.length; i++) {
+    	        bars[i].style.setProperty('--background', COLORS[Math.floor(Math.random() * COLORS.length)]);
+            }
+        }
+	</script>
+  </body>
+</html>
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Radio</title>
+
+	<script
+	  src="https://code.jquery.com/jquery-1.12.4.min.js"
+	  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+	  crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<div id="player"></div>
+
+	<script>
+	   // var player = new Playerjs({id:"player", file:"https://mediaplus.radio-tochka.com/mediaplus"});
+	   // Get current song
+		function NowPlaying(){
+		    $.ajax({
+		        url: "https://mediaplus.radio-tochka.com/mediaplus/currentsong?sid=#", 
+		        type: "GET",
+		        beforeSend: function (request) {
+			        request.setRequestHeader("Authorization", "Negotiate");
+			    },
+		        success: function(result) {
+		        	console.log(result);
+		            //$("#playing").html(result);
+		        }
+		    });
+		}
+
+		// Update every 5 seconds
+		setInterval(function(){
+		    NowPlaying();
+		}, 5000);
+	</script>
+</body>
+</html> -->

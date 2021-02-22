@@ -1,0 +1,493 @@
+//@import url('https://fonts.googleapis.com/css2?family=SourceSansPro:wght@300;400&display=swap');
+
+@font-face {
+  font-family: "SourceSansPro";
+  font-style: normal;
+  font-weight: 300;
+  font-display: block;
+  src:url(../webfonts/SourceSansPro-Light.ttf);
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src:url(../webfonts/SourceSansPro-Light.ttf);
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  font-style: normal;
+  font-weight: 600;
+  font-display: block;
+  src:url(../webfonts/SourceSansPro-SemiBold.ttf);
+}
+
+/** Structure **/
+
+body {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+
+  width: 100%;
+  min-width: 300px;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: #cacaca url("../image/realfm.png") repeat center center;
+  background-size: 200px;
+  filter: grayscale(100%);
+  opacity: .5;
+  z-index: -1;
+}
+
+.radio__header {
+  height: 20%;
+  padding: 1%;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+
+  background: url("../image/realfm-normal.png") no-repeat center center;
+  background-size: contain;
+}
+
+.radio__body {
+  height: 80%;
+}
+
+.player {
+  overflow: hidden;
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 400px;
+  height: 400px;
+  border-radius: 30px;
+
+  margin: 5% auto;
+
+  background-color: #ffffff;
+  box-shadow: 0 0 40px rgba(0,0,0,0.5);
+}
+
+.player .player__body {
+  position: relative;
+  background-color: #FFFFFF;
+  height: 70%;
+}
+
+.player .player__footer {
+  box-sizing: border-box;
+
+  position: relative;
+  background-color: #006996;
+  height: 30%;
+
+  padding: 1em;
+}
+
+.player .player__bar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.pbar {
+  text-align: right;
+}
+
+.pbar__controls {
+  padding: .5em;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.volume {
+
+}
+
+.volume .volume__toggle {
+
+}
+
+.fa-volume-up, .fa-volume-mute {
+  margin-top: 10px;
+  color: #0b62b3;
+
+  cursor: pointer;
+}
+
+.volume__slider {
+
+}
+
+.vslider {
+  position: absolute;
+  bottom: 50%;
+
+  height: 6em;
+  width: 1em;
+
+  border-radius: .375em;
+
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+  opacity: 0;
+
+  transition: opacity 200ms ease-in-out,
+              bottom  200ms ease-in-out;
+}
+
+.vslider_visible {
+  opacity: 1;
+
+  bottom: 100%;
+}
+
+input[type=range][orient=vertical].vslider__scale
+{
+  //writing-mode: bt-lr; /* IE */
+  -webkit-appearance: slider-vertical; /* WebKit */
+  width: 8px;
+  height: 90%;
+  padding: 0 5px;
+  margin: 30% auto;
+  display: table;
+
+  cursor: pointer;
+}
+
+/* FF */
+input[type=range][orient=vertical].vslider__scale::-moz-range-progress {
+  background-color: #43e5f7;
+}
+input[type=range][orient=vertical].vslider__scale::-moz-range-track {
+  background-color: #9a905d;
+}
+
+.live {
+  background: #cacaca;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+
+  font-family: 'SourceSansPro', sans-serif;
+  font-weight: 400;
+  font-size: .75em;
+
+  cursor: pointer;
+}
+
+.live.live_active {
+  background: #cc1919;
+}
+
+.live .live__indicator {
+  color: white;
+  font-size: 8px;
+  display: inline-block;
+
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+  margin-bottom: .5em;
+  vertical-align: middle;
+}
+
+/** Player Body Elements **/
+
+.fa-play {
+  padding-left: 5px;
+}
+
+.btn {
+  position: absolute;
+
+  display: inline-block;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: .75em;
+
+  border-radius: 50%;
+  background: red;
+  color: #ffffff;
+
+  border-style: none;
+  outline: none;
+
+  cursor: pointer;
+
+  transition: transform 300ms cubic-bezier(0.22, 1, 0.36, 1);
+
+  font-size: 2em;
+}
+
+.btn:hover {
+  transform: translate(-50%, -50%) scale(1.25);
+}
+
+.btnstat.btnstat_active {
+  display: block;
+
+  position: absolute;
+  box-sizing: border-box;
+
+  width: 80px;
+  height: 80px;
+
+  top: 50%;
+  left: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  padding: 0;
+
+  border-radius: 100%;
+  border-style: solid;
+  border-color: #fc0000;
+  border-width: 8px;
+
+  animation: circle-anim 3s infinite;
+}
+
+/** Player Footer Elements **/
+
+.pfooter {
+  display: flex;
+
+  font-family: 'SourceSansPro', sans-serif;
+}
+
+.pfooter__left {
+  width: 70%;
+  height: 100%;
+}
+
+.pfooter__right {
+  text-align: right;
+
+  width: 30%;
+  height: 100%;
+}
+
+h1.title, h5.subtitle {
+  margin: 0;
+
+  color: #ffffff;
+}
+
+h1.title {
+  font-weight: 600;
+}
+
+h5.subtitle {
+  font-weight: 300;
+}
+
+.summary {
+  color: #ffffff;
+
+  font-weight: 400;
+}
+
+/** Animated Circular Equalizer Bars **/
+
+.bars {
+  position:relative;
+  width:100%;
+  height:100%;
+  border-radius:100%;
+  overflow:hidden;
+}
+
+.bar {
+  width: 2px;
+  margin-left:-1px;
+  height:50%;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform-origin:50% 0;
+  -moz-transform-origin:50% 0;
+  transform-origin:50% 0;
+}
+
+.bar:after {
+  content:"";
+  position:absolute;
+  top:70%;
+  left:0;
+  width:4px;
+  height:70%;
+  background: #fc0000;
+}
+
+$elements: 121;
+@for $i from 0 to $elements{
+  .bar:nth-child(#{$i}) {
+    -webkit-transform: rotate(3 * $i + deg);
+    -moz-transform: rotate(3 * $i + deg);
+    transform: rotate(3 * $i + deg);
+  }
+  .bar:nth-child(#{$i}):after {
+    height: 10%;
+
+    background: var(--background);
+
+    -webkit-animation: animation+$i 2s infinite linear alternate;
+    -webkit-animation-delay: -$i*0.1 + s;
+    -moz-animation: animation+$i 2s infinite linear alternate;
+    -moz-animation-delay: -$i*0.1 + s;
+    animation: animation+$i 2s infinite linear alternate;
+    animation-delay: -$i*0.1 + s;
+
+    animation-play-state: paused;
+  }
+
+  .bars_active .bar:nth-child(#{$i}):after {
+    animation-play-state: running;
+  }
+
+  @-webkit-keyframes animation#{$i} {
+    0% {height:10 + random(10) * 1%;}
+    50% {height:10 + random(20) * 1%;}
+    100% {height:10 + random(10) * 1%;}
+  }
+  @-moz-keyframes animation#{$i} {
+    0% {height:10 + random(10) * 1%;}
+    50% {height:10 + random(20) * 1%;}
+    100% {height:10 + random(10) * 1%;}
+  }
+  @keyframes animation#{$i} {
+    0% {height:10 + random(10) * 1%;}
+    50% {height:10 + random(20) * 1%;}
+    100% {height:10 + random(10) * 1%;}
+  }
+}
+
+@keyframes circle-anim {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .player {
+    width: 500px;
+    height: 500px;
+  }
+
+  .title, .subtitle {
+    font-size: 1.5em;
+  }
+
+  .summary {
+    font-size: 1em;
+  }
+
+  .btn {
+    font-size: 3em;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .player {
+    width: 650px;
+    height: 650px;
+  }
+
+  .title, .subtitle {
+    font-size: 2em;
+  }
+
+  .summary {
+    font-size: 1.5em;
+  }
+
+  .btn {
+    font-size: 4em;
+  }
+
+  .pbar {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+  .player {
+    width: 350px;
+    height: 350px;
+  }
+
+  .title, .subtitle {
+    font-size: 1.5em;
+  }
+
+  .summary {
+    font-size: 1em;
+  }
+
+  .btn {
+    font-size: 2em;
+  }
+
+  .pbar {
+    font-size: 1.25em;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .player {
+    width: 500px;
+    height: 500px;
+  }
+
+  .pbar {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 992px) and (orientation: landscape) {
+  //.player {
+  //  width: 400px;
+  //  height: 400px;
+  //}
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .player {
+    width: 600px;
+    height: 600px;
+  }
+}
