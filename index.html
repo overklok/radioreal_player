@@ -57,8 +57,6 @@
                 <div id="btnstat" class="btnstat"></div>
                 <button id="button" class="btn btn_active">
                     <i class="fas fa-play"></i>
-    <!--                <i class="fas fa-pause"></i>-->
-    <!--                <i class="fas fa-stop"></i>-->
                 </button>
 
                 <div class="player__bar pbar">
@@ -121,14 +119,27 @@
     	});
 
     	__button.addEventListener('click', togglePlayer);
-        __volume_bar.addEventListener('change', setVolume);
-        __volume_toggle.addEventListener('click', toggleMute);
-        __live.addEventListener('click', resetPlayback);
+			__button.addEventListener('touchstart', togglePlayer);
 
-        updateClock();
-        // refreshListeners();
+      __volume_bar.addEventListener('change', setVolume);
+      __volume_toggle.addEventListener('click', toggleMute);
 
-        // setInterval(refreshListeners, 5000);
+      __live.addEventListener('click', resetPlayback);
+			__live.addEventListener('touchstart', resetPlayback);
+
+			document.addEventListener('mouseover', function(evt) {
+					console.log(evt.target);
+					if (!(evt.target.parentNode.id == 'volume-toggle' || evt.target.id == 'volume-slider')) {
+							__volume_slider.style.opacity = 0;
+					} else {
+							__volume_slider.style.opacity = 1;
+					}
+			});
+
+      updateClock();
+      // refreshListeners();
+
+      // setInterval(refreshListeners, 5000);
 
     	function togglePlayer() {
     	    switch (state.playback) {
