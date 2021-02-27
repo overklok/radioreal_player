@@ -50,7 +50,8 @@ body::before {
 
 .radio__header {
   height: 20%;
-  padding: 1%;
+  padding: 3%;
+  box-sizing: border-box;
 }
 
 .logo {
