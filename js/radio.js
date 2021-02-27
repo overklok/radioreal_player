@@ -33,7 +33,7 @@ __button.addEventListener('click', togglePlayer);
 __volume_bar.addEventListener('change', setVolume);
 
 if (mobileCheck()) {
-    document.addEventListener('click', toggleMute);
+    __volume_toggle.addEventListener('click', toggleMute);
     __volume_slider.style.display = 'none';
 } else {
     document.addEventListener('mouseover', toggleVolume);
