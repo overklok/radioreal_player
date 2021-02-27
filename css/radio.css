@@ -145,6 +145,20 @@ input[type=range][orient=vertical].vslider__scale::-moz-range-track {
   background-color: #9a905d;
 }
 
+/* Safari (mobile) */
+input[type=range]::-webkit-slider-runnable-track {
+  /* margin-left: -4px; */
+}
+
+input[type=range]::-webkit-slider-thumb {
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #9a905d;
+  /* margin-left: -4px; */
+}
+
 .live {
   background: #cacaca;
   padding: 5px;
@@ -305,35 +319,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation0 {
   0% {
+    height: 16%;
+  }
+  50% {
+    height: 13%;
+  }
+  100% {
+    height: 16%;
+  }
+}
+@-moz-keyframes animation0 {
+  0% {
     height: 19%;
+  }
+  50% {
+    height: 20%;
+  }
+  100% {
+    height: 14%;
+  }
+}
+@keyframes animation0 {
+  0% {
+    height: 17%;
   }
   50% {
     height: 16%;
   }
   100% {
-    height: 12%;
-  }
-}
-@-moz-keyframes animation0 {
-  0% {
-    height: 11%;
-  }
-  50% {
-    height: 21%;
-  }
-  100% {
-    height: 11%;
-  }
-}
-@keyframes animation0 {
-  0% {
-    height: 15%;
-  }
-  50% {
-    height: 30%;
-  }
-  100% {
-    height: 18%;
+    height: 17%;
   }
 }
 .bar:nth-child(1) {
@@ -363,7 +377,7 @@ h5.subtitle {
     height: 17%;
   }
   50% {
-    height: 12%;
+    height: 28%;
   }
   100% {
     height: 14%;
@@ -371,10 +385,10 @@ h5.subtitle {
 }
 @-moz-keyframes animation1 {
   0% {
-    height: 20%;
+    height: 17%;
   }
   50% {
-    height: 12%;
+    height: 14%;
   }
   100% {
     height: 13%;
@@ -382,13 +396,13 @@ h5.subtitle {
 }
 @keyframes animation1 {
   0% {
-    height: 15%;
+    height: 20%;
   }
   50% {
     height: 12%;
   }
   100% {
-    height: 18%;
+    height: 15%;
   }
 }
 .bar:nth-child(2) {
@@ -415,35 +429,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation2 {
   0% {
-    height: 11%;
+    height: 13%;
   }
   50% {
-    height: 17%;
+    height: 24%;
   }
   100% {
-    height: 13%;
+    height: 20%;
   }
 }
 @-moz-keyframes animation2 {
   0% {
-    height: 19%;
+    height: 20%;
   }
   50% {
-    height: 29%;
+    height: 28%;
   }
   100% {
-    height: 12%;
+    height: 11%;
   }
 }
 @keyframes animation2 {
   0% {
-    height: 12%;
-  }
-  50% {
     height: 19%;
   }
+  50% {
+    height: 30%;
+  }
   100% {
-    height: 11%;
+    height: 14%;
   }
 }
 .bar:nth-child(3) {
@@ -470,13 +484,13 @@ h5.subtitle {
 
 @-webkit-keyframes animation3 {
   0% {
-    height: 20%;
+    height: 15%;
   }
   50% {
-    height: 30%;
+    height: 18%;
   }
   100% {
-    height: 18%;
+    height: 11%;
   }
 }
 @-moz-keyframes animation3 {
@@ -484,18 +498,18 @@ h5.subtitle {
     height: 19%;
   }
   50% {
-    height: 18%;
+    height: 22%;
   }
   100% {
-    height: 14%;
+    height: 13%;
   }
 }
 @keyframes animation3 {
   0% {
-    height: 14%;
+    height: 17%;
   }
   50% {
-    height: 29%;
+    height: 11%;
   }
   100% {
     height: 20%;
@@ -525,35 +539,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation4 {
   0% {
-    height: 12%;
+    height: 13%;
   }
   50% {
+    height: 25%;
+  }
+  100% {
+    height: 20%;
+  }
+}
+@-moz-keyframes animation4 {
+  0% {
     height: 17%;
+  }
+  50% {
+    height: 11%;
   }
   100% {
     height: 14%;
   }
 }
-@-moz-keyframes animation4 {
-  0% {
-    height: 12%;
-  }
-  50% {
-    height: 30%;
-  }
-  100% {
-    height: 12%;
-  }
-}
 @keyframes animation4 {
   0% {
-    height: 16%;
+    height: 18%;
   }
   50% {
-    height: 17%;
+    height: 25%;
   }
   100% {
-    height: 12%;
+    height: 20%;
   }
 }
 .bar:nth-child(5) {
@@ -580,35 +594,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation5 {
   0% {
-    height: 20%;
+    height: 16%;
   }
   50% {
-    height: 25%;
+    height: 14%;
   }
   100% {
-    height: 13%;
+    height: 18%;
   }
 }
 @-moz-keyframes animation5 {
   0% {
-    height: 14%;
+    height: 16%;
   }
   50% {
-    height: 11%;
+    height: 30%;
   }
   100% {
-    height: 13%;
+    height: 15%;
   }
 }
 @keyframes animation5 {
   0% {
-    height: 14%;
+    height: 13%;
   }
   50% {
-    height: 16%;
+    height: 17%;
   }
   100% {
-    height: 20%;
+    height: 17%;
   }
 }
 .bar:nth-child(6) {
@@ -635,35 +649,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation6 {
   0% {
-    height: 19%;
+    height: 13%;
   }
   50% {
-    height: 21%;
+    height: 17%;
   }
   100% {
-    height: 13%;
+    height: 20%;
   }
 }
 @-moz-keyframes animation6 {
   0% {
-    height: 19%;
+    height: 20%;
   }
   50% {
-    height: 13%;
+    height: 22%;
   }
   100% {
-    height: 16%;
+    height: 12%;
   }
 }
 @keyframes animation6 {
   0% {
-    height: 13%;
+    height: 19%;
   }
   50% {
-    height: 15%;
+    height: 23%;
   }
   100% {
-    height: 14%;
+    height: 18%;
   }
 }
 .bar:nth-child(7) {
@@ -690,35 +704,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation7 {
   0% {
-    height: 19%;
-  }
-  50% {
     height: 16%;
   }
+  50% {
+    height: 27%;
+  }
   100% {
-    height: 11%;
+    height: 18%;
   }
 }
 @-moz-keyframes animation7 {
   0% {
-    height: 13%;
+    height: 19%;
   }
   50% {
-    height: 12%;
+    height: 26%;
   }
   100% {
-    height: 13%;
+    height: 18%;
   }
 }
 @keyframes animation7 {
   0% {
-    height: 20%;
+    height: 17%;
   }
   50% {
     height: 15%;
   }
   100% {
-    height: 16%;
+    height: 18%;
   }
 }
 .bar:nth-child(8) {
@@ -745,35 +759,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation8 {
   0% {
-    height: 20%;
+    height: 15%;
   }
   50% {
     height: 17%;
   }
   100% {
-    height: 15%;
+    height: 12%;
   }
 }
 @-moz-keyframes animation8 {
   0% {
-    height: 13%;
-  }
-  50% {
     height: 14%;
   }
+  50% {
+    height: 28%;
+  }
   100% {
-    height: 18%;
+    height: 19%;
   }
 }
 @keyframes animation8 {
   0% {
-    height: 19%;
+    height: 11%;
   }
   50% {
-    height: 30%;
+    height: 16%;
   }
   100% {
-    height: 11%;
+    height: 15%;
   }
 }
 .bar:nth-child(9) {
@@ -800,13 +814,13 @@ h5.subtitle {
 
 @-webkit-keyframes animation9 {
   0% {
-    height: 14%;
+    height: 12%;
   }
   50% {
-    height: 27%;
+    height: 28%;
   }
   100% {
-    height: 17%;
+    height: 12%;
   }
 }
 @-moz-keyframes animation9 {
@@ -814,21 +828,21 @@ h5.subtitle {
     height: 16%;
   }
   50% {
-    height: 19%;
+    height: 20%;
   }
   100% {
-    height: 17%;
+    height: 15%;
   }
 }
 @keyframes animation9 {
   0% {
-    height: 11%;
+    height: 12%;
   }
   50% {
-    height: 11%;
+    height: 27%;
   }
   100% {
-    height: 15%;
+    height: 12%;
   }
 }
 .bar:nth-child(10) {
@@ -855,21 +869,21 @@ h5.subtitle {
 
 @-webkit-keyframes animation10 {
   0% {
-    height: 17%;
+    height: 20%;
   }
   50% {
-    height: 12%;
+    height: 26%;
   }
   100% {
-    height: 14%;
+    height: 19%;
   }
 }
 @-moz-keyframes animation10 {
   0% {
-    height: 15%;
+    height: 18%;
   }
   50% {
-    height: 19%;
+    height: 18%;
   }
   100% {
     height: 20%;
@@ -877,13 +891,13 @@ h5.subtitle {
 }
 @keyframes animation10 {
   0% {
-    height: 12%;
+    height: 17%;
   }
   50% {
-    height: 16%;
+    height: 13%;
   }
   100% {
-    height: 11%;
+    height: 16%;
   }
 }
 .bar:nth-child(11) {
@@ -913,32 +927,32 @@ h5.subtitle {
     height: 18%;
   }
   50% {
-    height: 16%;
+    height: 20%;
   }
   100% {
-    height: 14%;
+    height: 13%;
   }
 }
 @-moz-keyframes animation11 {
   0% {
-    height: 16%;
+    height: 19%;
   }
   50% {
-    height: 26%;
+    height: 22%;
   }
   100% {
-    height: 11%;
+    height: 15%;
   }
 }
 @keyframes animation11 {
   0% {
-    height: 18%;
+    height: 12%;
   }
   50% {
-    height: 28%;
+    height: 22%;
   }
   100% {
-    height: 14%;
+    height: 20%;
   }
 }
 .bar:nth-child(12) {
@@ -965,35 +979,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation12 {
   0% {
-    height: 18%;
+    height: 19%;
   }
   50% {
-    height: 11%;
+    height: 26%;
   }
   100% {
-    height: 18%;
+    height: 12%;
   }
 }
 @-moz-keyframes animation12 {
   0% {
-    height: 18%;
+    height: 15%;
   }
   50% {
-    height: 28%;
+    height: 17%;
   }
   100% {
-    height: 13%;
+    height: 16%;
   }
 }
 @keyframes animation12 {
   0% {
-    height: 14%;
+    height: 18%;
   }
   50% {
-    height: 14%;
+    height: 26%;
   }
   100% {
-    height: 20%;
+    height: 14%;
   }
 }
 .bar:nth-child(13) {
@@ -1020,18 +1034,7 @@ h5.subtitle {
 
 @-webkit-keyframes animation13 {
   0% {
-    height: 19%;
-  }
-  50% {
-    height: 28%;
-  }
-  100% {
-    height: 20%;
-  }
-}
-@-moz-keyframes animation13 {
-  0% {
-    height: 13%;
+    height: 15%;
   }
   50% {
     height: 15%;
@@ -1040,15 +1043,26 @@ h5.subtitle {
     height: 18%;
   }
 }
-@keyframes animation13 {
+@-moz-keyframes animation13 {
   0% {
-    height: 16%;
+    height: 12%;
   }
   50% {
-    height: 17%;
+    height: 25%;
   }
   100% {
-    height: 17%;
+    height: 14%;
+  }
+}
+@keyframes animation13 {
+  0% {
+    height: 19%;
+  }
+  50% {
+    height: 19%;
+  }
+  100% {
+    height: 16%;
   }
 }
 .bar:nth-child(14) {
@@ -1075,35 +1089,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation14 {
   0% {
-    height: 13%;
-  }
-  50% {
-    height: 26%;
-  }
-  100% {
-    height: 18%;
-  }
-}
-@-moz-keyframes animation14 {
-  0% {
-    height: 18%;
-  }
-  50% {
-    height: 28%;
-  }
-  100% {
-    height: 11%;
-  }
-}
-@keyframes animation14 {
-  0% {
-    height: 17%;
+    height: 15%;
   }
   50% {
     height: 12%;
   }
   100% {
-    height: 17%;
+    height: 12%;
+  }
+}
+@-moz-keyframes animation14 {
+  0% {
+    height: 13%;
+  }
+  50% {
+    height: 15%;
+  }
+  100% {
+    height: 18%;
+  }
+}
+@keyframes animation14 {
+  0% {
+    height: 13%;
+  }
+  50% {
+    height: 24%;
+  }
+  100% {
+    height: 14%;
   }
 }
 .bar:nth-child(15) {
@@ -1133,10 +1147,10 @@ h5.subtitle {
     height: 14%;
   }
   50% {
-    height: 22%;
+    height: 25%;
   }
   100% {
-    height: 17%;
+    height: 20%;
   }
 }
 @-moz-keyframes animation15 {
@@ -1144,21 +1158,21 @@ h5.subtitle {
     height: 18%;
   }
   50% {
-    height: 17%;
+    height: 11%;
   }
   100% {
-    height: 11%;
+    height: 19%;
   }
 }
 @keyframes animation15 {
   0% {
-    height: 19%;
+    height: 12%;
   }
   50% {
-    height: 28%;
+    height: 11%;
   }
   100% {
-    height: 20%;
+    height: 19%;
   }
 }
 .bar:nth-child(16) {
@@ -1185,35 +1199,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation16 {
   0% {
-    height: 12%;
+    height: 15%;
   }
   50% {
-    height: 22%;
+    height: 18%;
   }
   100% {
-    height: 18%;
+    height: 15%;
   }
 }
 @-moz-keyframes animation16 {
   0% {
-    height: 14%;
+    height: 15%;
   }
   50% {
-    height: 27%;
+    height: 21%;
   }
   100% {
-    height: 17%;
+    height: 15%;
   }
 }
 @keyframes animation16 {
   0% {
-    height: 14%;
+    height: 16%;
   }
   50% {
-    height: 20%;
+    height: 25%;
   }
   100% {
-    height: 15%;
+    height: 14%;
   }
 }
 .bar:nth-child(17) {
@@ -1240,35 +1254,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation17 {
   0% {
-    height: 17%;
+    height: 20%;
   }
   50% {
-    height: 14%;
+    height: 30%;
   }
   100% {
-    height: 16%;
+    height: 20%;
   }
 }
 @-moz-keyframes animation17 {
   0% {
-    height: 18%;
+    height: 19%;
   }
   50% {
-    height: 25%;
+    height: 27%;
   }
   100% {
-    height: 11%;
+    height: 14%;
   }
 }
 @keyframes animation17 {
   0% {
-    height: 15%;
+    height: 14%;
   }
   50% {
-    height: 20%;
+    height: 28%;
   }
   100% {
-    height: 19%;
+    height: 18%;
   }
 }
 .bar:nth-child(18) {
@@ -1295,35 +1309,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation18 {
   0% {
-    height: 11%;
+    height: 20%;
   }
   50% {
-    height: 21%;
+    height: 14%;
   }
   100% {
-    height: 11%;
+    height: 16%;
   }
 }
 @-moz-keyframes animation18 {
   0% {
-    height: 17%;
+    height: 19%;
   }
   50% {
-    height: 27%;
+    height: 22%;
   }
   100% {
-    height: 12%;
+    height: 15%;
   }
 }
 @keyframes animation18 {
   0% {
-    height: 17%;
+    height: 18%;
   }
   50% {
-    height: 15%;
+    height: 19%;
   }
   100% {
-    height: 17%;
+    height: 12%;
   }
 }
 .bar:nth-child(19) {
@@ -1350,10 +1364,10 @@ h5.subtitle {
 
 @-webkit-keyframes animation19 {
   0% {
-    height: 14%;
+    height: 18%;
   }
   50% {
-    height: 24%;
+    height: 11%;
   }
   100% {
     height: 18%;
@@ -1364,7 +1378,7 @@ h5.subtitle {
     height: 16%;
   }
   50% {
-    height: 24%;
+    height: 15%;
   }
   100% {
     height: 13%;
@@ -1372,13 +1386,13 @@ h5.subtitle {
 }
 @keyframes animation19 {
   0% {
-    height: 13%;
+    height: 20%;
   }
   50% {
-    height: 24%;
+    height: 19%;
   }
   100% {
-    height: 20%;
+    height: 18%;
   }
 }
 .bar:nth-child(20) {
@@ -1405,35 +1419,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation20 {
   0% {
-    height: 15%;
+    height: 20%;
   }
   50% {
-    height: 18%;
+    height: 26%;
   }
   100% {
-    height: 15%;
+    height: 19%;
   }
 }
 @-moz-keyframes animation20 {
   0% {
-    height: 18%;
+    height: 14%;
   }
   50% {
-    height: 20%;
+    height: 18%;
   }
   100% {
-    height: 13%;
+    height: 15%;
   }
 }
 @keyframes animation20 {
   0% {
-    height: 20%;
+    height: 13%;
   }
   50% {
-    height: 11%;
+    height: 14%;
   }
   100% {
-    height: 15%;
+    height: 17%;
   }
 }
 .bar:nth-child(21) {
@@ -1460,13 +1474,13 @@ h5.subtitle {
 
 @-webkit-keyframes animation21 {
   0% {
-    height: 15%;
+    height: 12%;
   }
   50% {
-    height: 19%;
+    height: 25%;
   }
   100% {
-    height: 16%;
+    height: 12%;
   }
 }
 @-moz-keyframes animation21 {
@@ -1474,21 +1488,21 @@ h5.subtitle {
     height: 18%;
   }
   50% {
-    height: 20%;
+    height: 26%;
   }
   100% {
-    height: 20%;
+    height: 18%;
   }
 }
 @keyframes animation21 {
   0% {
-    height: 15%;
+    height: 18%;
   }
   50% {
-    height: 29%;
+    height: 12%;
   }
   100% {
-    height: 16%;
+    height: 19%;
   }
 }
 .bar:nth-child(22) {
@@ -1518,32 +1532,32 @@ h5.subtitle {
     height: 17%;
   }
   50% {
-    height: 12%;
+    height: 20%;
   }
   100% {
-    height: 18%;
+    height: 13%;
   }
 }
 @-moz-keyframes animation22 {
   0% {
-    height: 15%;
-  }
-  50% {
-    height: 18%;
-  }
-  100% {
     height: 14%;
-  }
-}
-@keyframes animation22 {
-  0% {
-    height: 11%;
   }
   50% {
     height: 19%;
   }
   100% {
-    height: 18%;
+    height: 17%;
+  }
+}
+@keyframes animation22 {
+  0% {
+    height: 13%;
+  }
+  50% {
+    height: 28%;
+  }
+  100% {
+    height: 20%;
   }
 }
 .bar:nth-child(23) {
@@ -1570,35 +1584,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation23 {
   0% {
-    height: 16%;
+    height: 15%;
   }
   50% {
-    height: 19%;
+    height: 30%;
   }
   100% {
-    height: 11%;
+    height: 13%;
   }
 }
 @-moz-keyframes animation23 {
   0% {
-    height: 20%;
+    height: 17%;
   }
   50% {
-    height: 23%;
+    height: 11%;
   }
   100% {
-    height: 11%;
+    height: 19%;
   }
 }
 @keyframes animation23 {
   0% {
-    height: 19%;
+    height: 20%;
   }
   50% {
-    height: 23%;
+    height: 30%;
   }
   100% {
-    height: 15%;
+    height: 19%;
   }
 }
 .bar:nth-child(24) {
@@ -1625,21 +1639,21 @@ h5.subtitle {
 
 @-webkit-keyframes animation24 {
   0% {
-    height: 15%;
+    height: 12%;
   }
   50% {
-    height: 18%;
+    height: 29%;
   }
   100% {
-    height: 19%;
+    height: 20%;
   }
 }
 @-moz-keyframes animation24 {
   0% {
-    height: 14%;
+    height: 20%;
   }
   50% {
-    height: 13%;
+    height: 11%;
   }
   100% {
     height: 20%;
@@ -1647,10 +1661,10 @@ h5.subtitle {
 }
 @keyframes animation24 {
   0% {
-    height: 12%;
+    height: 18%;
   }
   50% {
-    height: 14%;
+    height: 26%;
   }
   100% {
     height: 13%;
@@ -1680,35 +1694,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation25 {
   0% {
-    height: 19%;
+    height: 13%;
   }
   50% {
-    height: 26%;
+    height: 27%;
   }
   100% {
-    height: 12%;
+    height: 11%;
   }
 }
 @-moz-keyframes animation25 {
   0% {
-    height: 20%;
-  }
-  50% {
     height: 11%;
   }
+  50% {
+    height: 27%;
+  }
   100% {
-    height: 15%;
+    height: 16%;
   }
 }
 @keyframes animation25 {
   0% {
-    height: 14%;
+    height: 16%;
   }
   50% {
-    height: 18%;
+    height: 25%;
   }
   100% {
-    height: 20%;
+    height: 11%;
   }
 }
 .bar:nth-child(26) {
@@ -1735,13 +1749,13 @@ h5.subtitle {
 
 @-webkit-keyframes animation26 {
   0% {
-    height: 15%;
+    height: 12%;
   }
   50% {
-    height: 21%;
+    height: 13%;
   }
   100% {
-    height: 16%;
+    height: 15%;
   }
 }
 @-moz-keyframes animation26 {
@@ -1752,18 +1766,18 @@ h5.subtitle {
     height: 23%;
   }
   100% {
-    height: 13%;
+    height: 17%;
   }
 }
 @keyframes animation26 {
   0% {
-    height: 17%;
+    height: 13%;
   }
   50% {
-    height: 28%;
+    height: 24%;
   }
   100% {
-    height: 18%;
+    height: 12%;
   }
 }
 .bar:nth-child(27) {
@@ -1793,10 +1807,10 @@ h5.subtitle {
     height: 20%;
   }
   50% {
-    height: 18%;
+    height: 16%;
   }
   100% {
-    height: 17%;
+    height: 15%;
   }
 }
 @-moz-keyframes animation27 {
@@ -1804,10 +1818,10 @@ h5.subtitle {
     height: 13%;
   }
   50% {
-    height: 21%;
+    height: 26%;
   }
   100% {
-    height: 15%;
+    height: 14%;
   }
 }
 @keyframes animation27 {
@@ -1815,10 +1829,10 @@ h5.subtitle {
     height: 14%;
   }
   50% {
-    height: 11%;
+    height: 14%;
   }
   100% {
-    height: 14%;
+    height: 17%;
   }
 }
 .bar:nth-child(28) {
@@ -1845,35 +1859,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation28 {
   0% {
-    height: 16%;
-  }
-  50% {
     height: 17%;
   }
+  50% {
+    height: 27%;
+  }
   100% {
-    height: 11%;
+    height: 20%;
   }
 }
 @-moz-keyframes animation28 {
   0% {
-    height: 19%;
+    height: 18%;
   }
   50% {
-    height: 11%;
+    height: 26%;
   }
   100% {
-    height: 14%;
+    height: 11%;
   }
 }
 @keyframes animation28 {
   0% {
-    height: 14%;
-  }
-  50% {
     height: 12%;
   }
-  100% {
+  50% {
     height: 18%;
+  }
+  100% {
+    height: 17%;
   }
 }
 .bar:nth-child(29) {
@@ -1903,32 +1917,32 @@ h5.subtitle {
     height: 17%;
   }
   50% {
-    height: 16%;
-  }
-  100% {
-    height: 15%;
-  }
-}
-@-moz-keyframes animation29 {
-  0% {
-    height: 19%;
-  }
-  50% {
-    height: 21%;
-  }
-  100% {
-    height: 15%;
-  }
-}
-@keyframes animation29 {
-  0% {
-    height: 15%;
-  }
-  50% {
     height: 20%;
   }
   100% {
     height: 12%;
+  }
+}
+@-moz-keyframes animation29 {
+  0% {
+    height: 17%;
+  }
+  50% {
+    height: 18%;
+  }
+  100% {
+    height: 14%;
+  }
+}
+@keyframes animation29 {
+  0% {
+    height: 20%;
+  }
+  50% {
+    height: 28%;
+  }
+  100% {
+    height: 13%;
   }
 }
 .bar:nth-child(30) {
@@ -1955,35 +1969,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation30 {
   0% {
-    height: 14%;
+    height: 13%;
   }
   50% {
     height: 30%;
   }
   100% {
-    height: 17%;
+    height: 15%;
   }
 }
 @-moz-keyframes animation30 {
   0% {
-    height: 18%;
+    height: 16%;
   }
   50% {
-    height: 25%;
+    height: 11%;
   }
   100% {
-    height: 11%;
+    height: 13%;
   }
 }
 @keyframes animation30 {
   0% {
-    height: 13%;
+    height: 11%;
   }
   50% {
-    height: 20%;
+    height: 21%;
   }
   100% {
-    height: 17%;
+    height: 13%;
   }
 }
 .bar:nth-child(31) {
@@ -2010,35 +2024,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation31 {
   0% {
-    height: 20%;
+    height: 15%;
   }
   50% {
-    height: 25%;
-  }
-  100% {
-    height: 18%;
-  }
-}
-@-moz-keyframes animation31 {
-  0% {
-    height: 13%;
-  }
-  50% {
-    height: 24%;
+    height: 26%;
   }
   100% {
     height: 16%;
   }
 }
-@keyframes animation31 {
+@-moz-keyframes animation31 {
   0% {
-    height: 20%;
+    height: 19%;
   }
   50% {
-    height: 23%;
+    height: 22%;
   }
   100% {
-    height: 11%;
+    height: 15%;
+  }
+}
+@keyframes animation31 {
+  0% {
+    height: 14%;
+  }
+  50% {
+    height: 19%;
+  }
+  100% {
+    height: 14%;
   }
 }
 .bar:nth-child(32) {
@@ -2065,35 +2079,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation32 {
   0% {
-    height: 18%;
+    height: 14%;
   }
   50% {
     height: 27%;
   }
   100% {
-    height: 15%;
+    height: 19%;
   }
 }
 @-moz-keyframes animation32 {
   0% {
-    height: 13%;
+    height: 20%;
   }
   50% {
-    height: 30%;
+    height: 18%;
   }
   100% {
-    height: 20%;
+    height: 13%;
   }
 }
 @keyframes animation32 {
   0% {
-    height: 16%;
+    height: 14%;
   }
   50% {
-    height: 17%;
+    height: 21%;
   }
   100% {
-    height: 17%;
+    height: 16%;
   }
 }
 .bar:nth-child(33) {
@@ -2120,7 +2134,7 @@ h5.subtitle {
 
 @-webkit-keyframes animation33 {
   0% {
-    height: 11%;
+    height: 20%;
   }
   50% {
     height: 24%;
@@ -2131,21 +2145,21 @@ h5.subtitle {
 }
 @-moz-keyframes animation33 {
   0% {
-    height: 14%;
+    height: 15%;
   }
   50% {
-    height: 16%;
+    height: 21%;
   }
   100% {
-    height: 12%;
+    height: 17%;
   }
 }
 @keyframes animation33 {
   0% {
-    height: 20%;
+    height: 14%;
   }
   50% {
-    height: 14%;
+    height: 28%;
   }
   100% {
     height: 16%;
@@ -2175,13 +2189,13 @@ h5.subtitle {
 
 @-webkit-keyframes animation34 {
   0% {
-    height: 11%;
+    height: 14%;
   }
   50% {
-    height: 17%;
+    height: 26%;
   }
   100% {
-    height: 11%;
+    height: 12%;
   }
 }
 @-moz-keyframes animation34 {
@@ -2189,21 +2203,21 @@ h5.subtitle {
     height: 17%;
   }
   50% {
-    height: 26%;
+    height: 20%;
   }
   100% {
-    height: 14%;
+    height: 11%;
   }
 }
 @keyframes animation34 {
   0% {
-    height: 20%;
+    height: 17%;
   }
   50% {
-    height: 23%;
+    height: 24%;
   }
   100% {
-    height: 18%;
+    height: 14%;
   }
 }
 .bar:nth-child(35) {
@@ -2230,10 +2244,10 @@ h5.subtitle {
 
 @-webkit-keyframes animation35 {
   0% {
-    height: 16%;
+    height: 19%;
   }
   50% {
-    height: 12%;
+    height: 21%;
   }
   100% {
     height: 15%;
@@ -2241,24 +2255,24 @@ h5.subtitle {
 }
 @-moz-keyframes animation35 {
   0% {
-    height: 18%;
+    height: 19%;
   }
   50% {
-    height: 24%;
+    height: 18%;
   }
   100% {
-    height: 14%;
+    height: 19%;
   }
 }
 @keyframes animation35 {
   0% {
-    height: 19%;
+    height: 11%;
   }
   50% {
-    height: 13%;
+    height: 17%;
   }
   100% {
-    height: 12%;
+    height: 18%;
   }
 }
 .bar:nth-child(36) {
@@ -2285,24 +2299,24 @@ h5.subtitle {
 
 @-webkit-keyframes animation36 {
   0% {
-    height: 20%;
+    height: 15%;
   }
   50% {
-    height: 17%;
+    height: 23%;
   }
   100% {
-    height: 16%;
+    height: 20%;
   }
 }
 @-moz-keyframes animation36 {
   0% {
-    height: 16%;
+    height: 14%;
   }
   50% {
-    height: 25%;
+    height: 13%;
   }
   100% {
-    height: 17%;
+    height: 13%;
   }
 }
 @keyframes animation36 {
@@ -2310,10 +2324,10 @@ h5.subtitle {
     height: 19%;
   }
   50% {
-    height: 28%;
+    height: 27%;
   }
   100% {
-    height: 13%;
+    height: 14%;
   }
 }
 .bar:nth-child(37) {
@@ -2343,10 +2357,10 @@ h5.subtitle {
     height: 14%;
   }
   50% {
-    height: 23%;
+    height: 28%;
   }
   100% {
-    height: 13%;
+    height: 11%;
   }
 }
 @-moz-keyframes animation37 {
@@ -2354,21 +2368,21 @@ h5.subtitle {
     height: 12%;
   }
   50% {
-    height: 22%;
+    height: 18%;
   }
   100% {
-    height: 14%;
+    height: 20%;
   }
 }
 @keyframes animation37 {
   0% {
-    height: 19%;
+    height: 13%;
   }
   50% {
-    height: 20%;
+    height: 23%;
   }
   100% {
-    height: 14%;
+    height: 20%;
   }
 }
 .bar:nth-child(38) {
@@ -2395,10 +2409,10 @@ h5.subtitle {
 
 @-webkit-keyframes animation38 {
   0% {
-    height: 17%;
+    height: 18%;
   }
   50% {
-    height: 13%;
+    height: 16%;
   }
   100% {
     height: 12%;
@@ -2406,24 +2420,24 @@ h5.subtitle {
 }
 @-moz-keyframes animation38 {
   0% {
-    height: 16%;
+    height: 19%;
   }
   50% {
-    height: 11%;
+    height: 13%;
   }
   100% {
-    height: 13%;
+    height: 19%;
   }
 }
 @keyframes animation38 {
   0% {
-    height: 12%;
+    height: 20%;
   }
   50% {
-    height: 18%;
+    height: 22%;
   }
   100% {
-    height: 17%;
+    height: 13%;
   }
 }
 .bar:nth-child(39) {
@@ -2450,35 +2464,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation39 {
   0% {
-    height: 20%;
+    height: 15%;
   }
   50% {
-    height: 19%;
+    height: 17%;
   }
   100% {
-    height: 18%;
+    height: 11%;
   }
 }
 @-moz-keyframes animation39 {
   0% {
-    height: 19%;
+    height: 18%;
   }
   50% {
-    height: 16%;
+    height: 11%;
   }
   100% {
-    height: 19%;
+    height: 16%;
   }
 }
 @keyframes animation39 {
   0% {
-    height: 18%;
+    height: 16%;
   }
   50% {
-    height: 27%;
+    height: 22%;
   }
   100% {
-    height: 16%;
+    height: 12%;
   }
 }
 .bar:nth-child(40) {
@@ -2505,13 +2519,13 @@ h5.subtitle {
 
 @-webkit-keyframes animation40 {
   0% {
-    height: 20%;
+    height: 16%;
   }
   50% {
-    height: 22%;
+    height: 12%;
   }
   100% {
-    height: 13%;
+    height: 20%;
   }
 }
 @-moz-keyframes animation40 {
@@ -2519,21 +2533,21 @@ h5.subtitle {
     height: 20%;
   }
   50% {
-    height: 20%;
+    height: 14%;
   }
   100% {
-    height: 17%;
+    height: 15%;
   }
 }
 @keyframes animation40 {
   0% {
-    height: 20%;
+    height: 16%;
   }
   50% {
-    height: 13%;
+    height: 12%;
   }
   100% {
-    height: 14%;
+    height: 19%;
   }
 }
 .bar:nth-child(41) {
@@ -2560,35 +2574,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation41 {
   0% {
-    height: 11%;
-  }
-  50% {
-    height: 11%;
-  }
-  100% {
     height: 19%;
-  }
-}
-@-moz-keyframes animation41 {
-  0% {
-    height: 19%;
-  }
-  50% {
-    height: 12%;
-  }
-  100% {
-    height: 13%;
-  }
-}
-@keyframes animation41 {
-  0% {
-    height: 17%;
   }
   50% {
     height: 27%;
   }
   100% {
     height: 14%;
+  }
+}
+@-moz-keyframes animation41 {
+  0% {
+    height: 14%;
+  }
+  50% {
+    height: 18%;
+  }
+  100% {
+    height: 11%;
+  }
+}
+@keyframes animation41 {
+  0% {
+    height: 11%;
+  }
+  50% {
+    height: 22%;
+  }
+  100% {
+    height: 15%;
   }
 }
 .bar:nth-child(42) {
@@ -2615,35 +2629,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation42 {
   0% {
-    height: 14%;
+    height: 15%;
   }
   50% {
-    height: 21%;
+    height: 25%;
   }
   100% {
-    height: 17%;
+    height: 13%;
   }
 }
 @-moz-keyframes animation42 {
   0% {
-    height: 12%;
+    height: 18%;
   }
   50% {
-    height: 17%;
+    height: 13%;
   }
   100% {
-    height: 11%;
+    height: 15%;
   }
 }
 @keyframes animation42 {
   0% {
-    height: 13%;
+    height: 17%;
   }
   50% {
-    height: 15%;
+    height: 23%;
   }
   100% {
-    height: 19%;
+    height: 17%;
   }
 }
 .bar:nth-child(43) {
@@ -2670,35 +2684,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation43 {
   0% {
-    height: 19%;
+    height: 18%;
   }
   50% {
-    height: 23%;
+    height: 21%;
   }
   100% {
-    height: 17%;
+    height: 12%;
   }
 }
 @-moz-keyframes animation43 {
   0% {
-    height: 11%;
+    height: 16%;
   }
   50% {
-    height: 20%;
+    height: 13%;
   }
   100% {
-    height: 18%;
+    height: 16%;
   }
 }
 @keyframes animation43 {
   0% {
-    height: 20%;
+    height: 16%;
   }
   50% {
-    height: 18%;
+    height: 21%;
   }
   100% {
-    height: 17%;
+    height: 14%;
   }
 }
 .bar:nth-child(44) {
@@ -2725,35 +2739,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation44 {
   0% {
-    height: 17%;
+    height: 20%;
   }
   50% {
-    height: 22%;
+    height: 14%;
   }
   100% {
-    height: 13%;
+    height: 16%;
   }
 }
 @-moz-keyframes animation44 {
   0% {
-    height: 13%;
+    height: 15%;
   }
   50% {
-    height: 19%;
+    height: 23%;
   }
   100% {
-    height: 20%;
+    height: 11%;
   }
 }
 @keyframes animation44 {
   0% {
-    height: 17%;
+    height: 18%;
   }
   50% {
-    height: 20%;
+    height: 27%;
   }
   100% {
-    height: 16%;
+    height: 12%;
   }
 }
 .bar:nth-child(45) {
@@ -2780,10 +2794,10 @@ h5.subtitle {
 
 @-webkit-keyframes animation45 {
   0% {
-    height: 14%;
+    height: 11%;
   }
   50% {
-    height: 19%;
+    height: 13%;
   }
   100% {
     height: 13%;
@@ -2791,21 +2805,21 @@ h5.subtitle {
 }
 @-moz-keyframes animation45 {
   0% {
-    height: 11%;
+    height: 17%;
   }
   50% {
-    height: 22%;
+    height: 23%;
   }
   100% {
-    height: 16%;
+    height: 19%;
   }
 }
 @keyframes animation45 {
   0% {
-    height: 11%;
+    height: 16%;
   }
   50% {
-    height: 19%;
+    height: 26%;
   }
   100% {
     height: 16%;
@@ -2835,35 +2849,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation46 {
   0% {
-    height: 19%;
+    height: 20%;
   }
   50% {
     height: 24%;
   }
   100% {
-    height: 11%;
+    height: 15%;
   }
 }
 @-moz-keyframes animation46 {
   0% {
-    height: 12%;
+    height: 11%;
   }
   50% {
-    height: 16%;
+    height: 24%;
   }
   100% {
-    height: 20%;
+    height: 16%;
   }
 }
 @keyframes animation46 {
   0% {
-    height: 12%;
+    height: 19%;
   }
   50% {
-    height: 27%;
+    height: 28%;
   }
   100% {
-    height: 18%;
+    height: 19%;
   }
 }
 .bar:nth-child(47) {
@@ -2890,24 +2904,24 @@ h5.subtitle {
 
 @-webkit-keyframes animation47 {
   0% {
-    height: 17%;
+    height: 20%;
   }
   50% {
-    height: 14%;
+    height: 22%;
   }
   100% {
-    height: 15%;
+    height: 16%;
   }
 }
 @-moz-keyframes animation47 {
   0% {
-    height: 14%;
+    height: 15%;
   }
   50% {
-    height: 18%;
+    height: 17%;
   }
   100% {
-    height: 20%;
+    height: 19%;
   }
 }
 @keyframes animation47 {
@@ -2915,10 +2929,10 @@ h5.subtitle {
     height: 12%;
   }
   50% {
-    height: 19%;
+    height: 16%;
   }
   100% {
-    height: 13%;
+    height: 11%;
   }
 }
 .bar:nth-child(48) {
@@ -2945,35 +2959,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation48 {
   0% {
-    height: 20%;
+    height: 16%;
   }
   50% {
     height: 18%;
   }
   100% {
-    height: 16%;
+    height: 17%;
   }
 }
 @-moz-keyframes animation48 {
   0% {
-    height: 13%;
+    height: 20%;
   }
   50% {
-    height: 16%;
+    height: 29%;
   }
   100% {
-    height: 15%;
+    height: 18%;
   }
 }
 @keyframes animation48 {
   0% {
-    height: 19%;
+    height: 18%;
   }
   50% {
-    height: 11%;
+    height: 20%;
   }
   100% {
-    height: 12%;
+    height: 16%;
   }
 }
 .bar:nth-child(49) {
@@ -3000,35 +3014,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation49 {
   0% {
-    height: 16%;
+    height: 13%;
   }
   50% {
-    height: 25%;
+    height: 20%;
   }
   100% {
-    height: 19%;
+    height: 12%;
   }
 }
 @-moz-keyframes animation49 {
   0% {
-    height: 13%;
+    height: 17%;
   }
   50% {
-    height: 26%;
+    height: 30%;
   }
   100% {
-    height: 19%;
+    height: 13%;
   }
 }
 @keyframes animation49 {
   0% {
-    height: 20%;
+    height: 16%;
   }
   50% {
-    height: 15%;
+    height: 27%;
   }
   100% {
-    height: 14%;
+    height: 18%;
   }
 }
 .bar:nth-child(50) {
@@ -3058,7 +3072,7 @@ h5.subtitle {
     height: 16%;
   }
   50% {
-    height: 15%;
+    height: 23%;
   }
   100% {
     height: 19%;
@@ -3066,24 +3080,24 @@ h5.subtitle {
 }
 @-moz-keyframes animation50 {
   0% {
-    height: 18%;
+    height: 15%;
   }
   50% {
-    height: 21%;
+    height: 23%;
   }
   100% {
-    height: 14%;
+    height: 12%;
   }
 }
 @keyframes animation50 {
   0% {
-    height: 11%;
+    height: 14%;
   }
   50% {
-    height: 26%;
+    height: 23%;
   }
   100% {
-    height: 16%;
+    height: 20%;
   }
 }
 .bar:nth-child(51) {
@@ -3110,29 +3124,29 @@ h5.subtitle {
 
 @-webkit-keyframes animation51 {
   0% {
-    height: 20%;
+    height: 12%;
   }
   50% {
-    height: 13%;
+    height: 17%;
   }
   100% {
-    height: 18%;
+    height: 11%;
   }
 }
 @-moz-keyframes animation51 {
   0% {
-    height: 13%;
+    height: 15%;
   }
   50% {
-    height: 20%;
+    height: 14%;
   }
   100% {
-    height: 17%;
+    height: 15%;
   }
 }
 @keyframes animation51 {
   0% {
-    height: 14%;
+    height: 20%;
   }
   50% {
     height: 20%;
@@ -3165,10 +3179,10 @@ h5.subtitle {
 
 @-webkit-keyframes animation52 {
   0% {
-    height: 13%;
+    height: 15%;
   }
   50% {
-    height: 18%;
+    height: 27%;
   }
   100% {
     height: 18%;
@@ -3176,13 +3190,13 @@ h5.subtitle {
 }
 @-moz-keyframes animation52 {
   0% {
-    height: 17%;
+    height: 15%;
   }
   50% {
-    height: 12%;
+    height: 22%;
   }
   100% {
-    height: 17%;
+    height: 11%;
   }
 }
 @keyframes animation52 {
@@ -3190,10 +3204,10 @@ h5.subtitle {
     height: 12%;
   }
   50% {
-    height: 13%;
+    height: 18%;
   }
   100% {
-    height: 12%;
+    height: 13%;
   }
 }
 .bar:nth-child(53) {
@@ -3220,10 +3234,10 @@ h5.subtitle {
 
 @-webkit-keyframes animation53 {
   0% {
-    height: 13%;
+    height: 17%;
   }
   50% {
-    height: 22%;
+    height: 14%;
   }
   100% {
     height: 16%;
@@ -3231,24 +3245,24 @@ h5.subtitle {
 }
 @-moz-keyframes animation53 {
   0% {
-    height: 16%;
+    height: 17%;
   }
   50% {
-    height: 28%;
+    height: 17%;
   }
   100% {
-    height: 18%;
+    height: 13%;
   }
 }
 @keyframes animation53 {
   0% {
-    height: 20%;
+    height: 14%;
   }
   50% {
-    height: 16%;
+    height: 24%;
   }
   100% {
-    height: 14%;
+    height: 20%;
   }
 }
 .bar:nth-child(54) {
@@ -3275,35 +3289,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation54 {
   0% {
-    height: 13%;
+    height: 20%;
   }
   50% {
-    height: 18%;
+    height: 30%;
   }
   100% {
-    height: 20%;
+    height: 11%;
   }
 }
 @-moz-keyframes animation54 {
   0% {
-    height: 19%;
+    height: 13%;
   }
   50% {
-    height: 16%;
+    height: 11%;
   }
   100% {
-    height: 12%;
+    height: 15%;
   }
 }
 @keyframes animation54 {
   0% {
-    height: 18%;
+    height: 16%;
   }
   50% {
-    height: 13%;
+    height: 11%;
   }
   100% {
-    height: 12%;
+    height: 17%;
   }
 }
 .bar:nth-child(55) {
@@ -3330,35 +3344,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation55 {
   0% {
-    height: 15%;
+    height: 11%;
   }
   50% {
-    height: 22%;
+    height: 12%;
   }
   100% {
-    height: 14%;
+    height: 17%;
   }
 }
 @-moz-keyframes animation55 {
   0% {
-    height: 13%;
+    height: 11%;
   }
   50% {
-    height: 20%;
+    height: 12%;
   }
   100% {
-    height: 20%;
+    height: 17%;
   }
 }
 @keyframes animation55 {
   0% {
-    height: 15%;
+    height: 14%;
   }
   50% {
-    height: 27%;
+    height: 25%;
   }
   100% {
-    height: 20%;
+    height: 17%;
   }
 }
 .bar:nth-child(56) {
@@ -3391,29 +3405,29 @@ h5.subtitle {
     height: 20%;
   }
   100% {
-    height: 14%;
+    height: 19%;
   }
 }
 @-moz-keyframes animation56 {
   0% {
-    height: 19%;
+    height: 12%;
   }
   50% {
-    height: 30%;
+    height: 24%;
   }
   100% {
-    height: 13%;
+    height: 18%;
   }
 }
 @keyframes animation56 {
   0% {
-    height: 11%;
+    height: 18%;
   }
   50% {
-    height: 12%;
+    height: 21%;
   }
   100% {
-    height: 12%;
+    height: 11%;
   }
 }
 .bar:nth-child(57) {
@@ -3440,35 +3454,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation57 {
   0% {
-    height: 20%;
+    height: 14%;
   }
   50% {
     height: 20%;
   }
   100% {
-    height: 11%;
+    height: 16%;
   }
 }
 @-moz-keyframes animation57 {
   0% {
-    height: 16%;
+    height: 17%;
   }
   50% {
-    height: 25%;
+    height: 16%;
   }
   100% {
-    height: 18%;
+    height: 13%;
   }
 }
 @keyframes animation57 {
   0% {
-    height: 20%;
+    height: 18%;
   }
   50% {
-    height: 14%;
+    height: 20%;
   }
   100% {
-    height: 13%;
+    height: 18%;
   }
 }
 .bar:nth-child(58) {
@@ -3495,10 +3509,10 @@ h5.subtitle {
 
 @-webkit-keyframes animation58 {
   0% {
-    height: 17%;
+    height: 18%;
   }
   50% {
-    height: 22%;
+    height: 23%;
   }
   100% {
     height: 15%;
@@ -3506,21 +3520,21 @@ h5.subtitle {
 }
 @-moz-keyframes animation58 {
   0% {
-    height: 19%;
-  }
-  50% {
     height: 14%;
   }
+  50% {
+    height: 15%;
+  }
   100% {
-    height: 20%;
+    height: 16%;
   }
 }
 @keyframes animation58 {
   0% {
-    height: 11%;
+    height: 17%;
   }
   50% {
-    height: 25%;
+    height: 21%;
   }
   100% {
     height: 14%;
@@ -3550,35 +3564,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation59 {
   0% {
-    height: 18%;
-  }
-  50% {
-    height: 19%;
-  }
-  100% {
-    height: 12%;
-  }
-}
-@-moz-keyframes animation59 {
-  0% {
-    height: 15%;
+    height: 17%;
   }
   50% {
     height: 25%;
   }
   100% {
-    height: 19%;
+    height: 14%;
+  }
+}
+@-moz-keyframes animation59 {
+  0% {
+    height: 20%;
+  }
+  50% {
+    height: 27%;
+  }
+  100% {
+    height: 11%;
   }
 }
 @keyframes animation59 {
   0% {
-    height: 13%;
+    height: 18%;
   }
   50% {
-    height: 22%;
+    height: 16%;
   }
   100% {
-    height: 16%;
+    height: 18%;
   }
 }
 .bar:nth-child(60) {
@@ -3608,7 +3622,7 @@ h5.subtitle {
     height: 20%;
   }
   50% {
-    height: 21%;
+    height: 25%;
   }
   100% {
     height: 20%;
@@ -3616,24 +3630,24 @@ h5.subtitle {
 }
 @-moz-keyframes animation60 {
   0% {
-    height: 15%;
+    height: 18%;
   }
   50% {
-    height: 16%;
+    height: 15%;
   }
   100% {
-    height: 13%;
+    height: 19%;
   }
 }
 @keyframes animation60 {
   0% {
-    height: 17%;
+    height: 19%;
   }
   50% {
-    height: 22%;
+    height: 11%;
   }
   100% {
-    height: 15%;
+    height: 13%;
   }
 }
 .bar:nth-child(61) {
@@ -3660,35 +3674,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation61 {
   0% {
-    height: 15%;
+    height: 13%;
   }
   50% {
-    height: 30%;
+    height: 15%;
+  }
+  100% {
+    height: 17%;
+  }
+}
+@-moz-keyframes animation61 {
+  0% {
+    height: 13%;
+  }
+  50% {
+    height: 14%;
   }
   100% {
     height: 16%;
   }
 }
-@-moz-keyframes animation61 {
-  0% {
-    height: 17%;
-  }
-  50% {
-    height: 30%;
-  }
-  100% {
-    height: 18%;
-  }
-}
 @keyframes animation61 {
   0% {
-    height: 19%;
+    height: 14%;
   }
   50% {
-    height: 26%;
+    height: 16%;
   }
   100% {
-    height: 19%;
+    height: 11%;
   }
 }
 .bar:nth-child(62) {
@@ -3715,13 +3729,13 @@ h5.subtitle {
 
 @-webkit-keyframes animation62 {
   0% {
-    height: 20%;
+    height: 14%;
   }
   50% {
-    height: 16%;
+    height: 21%;
   }
   100% {
-    height: 11%;
+    height: 17%;
   }
 }
 @-moz-keyframes animation62 {
@@ -3729,21 +3743,21 @@ h5.subtitle {
     height: 11%;
   }
   50% {
-    height: 13%;
+    height: 27%;
   }
   100% {
-    height: 15%;
+    height: 18%;
   }
 }
 @keyframes animation62 {
   0% {
-    height: 17%;
+    height: 16%;
   }
   50% {
-    height: 14%;
+    height: 26%;
   }
   100% {
-    height: 18%;
+    height: 17%;
   }
 }
 .bar:nth-child(63) {
@@ -3770,35 +3784,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation63 {
   0% {
-    height: 14%;
-  }
-  50% {
     height: 16%;
-  }
-  100% {
-    height: 16%;
-  }
-}
-@-moz-keyframes animation63 {
-  0% {
-    height: 19%;
   }
   50% {
     height: 25%;
   }
   100% {
-    height: 17%;
+    height: 11%;
   }
 }
-@keyframes animation63 {
+@-moz-keyframes animation63 {
   0% {
     height: 20%;
   }
   50% {
-    height: 24%;
+    height: 16%;
   }
   100% {
-    height: 15%;
+    height: 14%;
+  }
+}
+@keyframes animation63 {
+  0% {
+    height: 13%;
+  }
+  50% {
+    height: 29%;
+  }
+  100% {
+    height: 18%;
   }
 }
 .bar:nth-child(64) {
@@ -3825,13 +3839,13 @@ h5.subtitle {
 
 @-webkit-keyframes animation64 {
   0% {
-    height: 14%;
+    height: 18%;
   }
   50% {
-    height: 25%;
+    height: 21%;
   }
   100% {
-    height: 15%;
+    height: 12%;
   }
 }
 @-moz-keyframes animation64 {
@@ -3839,21 +3853,21 @@ h5.subtitle {
     height: 16%;
   }
   50% {
-    height: 24%;
+    height: 11%;
   }
   100% {
-    height: 11%;
+    height: 15%;
   }
 }
 @keyframes animation64 {
   0% {
-    height: 13%;
+    height: 11%;
   }
   50% {
-    height: 27%;
+    height: 28%;
   }
   100% {
-    height: 13%;
+    height: 14%;
   }
 }
 .bar:nth-child(65) {
@@ -3880,10 +3894,10 @@ h5.subtitle {
 
 @-webkit-keyframes animation65 {
   0% {
-    height: 20%;
+    height: 12%;
   }
   50% {
-    height: 20%;
+    height: 17%;
   }
   100% {
     height: 16%;
@@ -3891,24 +3905,24 @@ h5.subtitle {
 }
 @-moz-keyframes animation65 {
   0% {
-    height: 14%;
+    height: 16%;
   }
   50% {
-    height: 18%;
+    height: 16%;
   }
   100% {
-    height: 18%;
+    height: 19%;
   }
 }
 @keyframes animation65 {
   0% {
-    height: 18%;
+    height: 12%;
   }
   50% {
     height: 11%;
   }
   100% {
-    height: 13%;
+    height: 16%;
   }
 }
 .bar:nth-child(66) {
@@ -3935,21 +3949,21 @@ h5.subtitle {
 
 @-webkit-keyframes animation66 {
   0% {
-    height: 20%;
+    height: 13%;
   }
   50% {
-    height: 15%;
+    height: 19%;
   }
   100% {
-    height: 13%;
+    height: 11%;
   }
 }
 @-moz-keyframes animation66 {
   0% {
-    height: 16%;
+    height: 18%;
   }
   50% {
-    height: 27%;
+    height: 18%;
   }
   100% {
     height: 17%;
@@ -3957,13 +3971,13 @@ h5.subtitle {
 }
 @keyframes animation66 {
   0% {
-    height: 18%;
+    height: 14%;
   }
   50% {
-    height: 25%;
+    height: 26%;
   }
   100% {
-    height: 13%;
+    height: 16%;
   }
 }
 .bar:nth-child(67) {
@@ -3990,35 +4004,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation67 {
   0% {
-    height: 20%;
+    height: 14%;
   }
   50% {
-    height: 26%;
+    height: 12%;
   }
   100% {
-    height: 11%;
+    height: 16%;
   }
 }
 @-moz-keyframes animation67 {
   0% {
-    height: 20%;
+    height: 18%;
   }
   50% {
-    height: 16%;
+    height: 23%;
   }
   100% {
-    height: 18%;
+    height: 17%;
   }
 }
 @keyframes animation67 {
   0% {
-    height: 12%;
+    height: 19%;
   }
   50% {
-    height: 28%;
+    height: 20%;
   }
   100% {
-    height: 19%;
+    height: 13%;
   }
 }
 .bar:nth-child(68) {
@@ -4045,35 +4059,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation68 {
   0% {
-    height: 12%;
+    height: 18%;
   }
   50% {
-    height: 22%;
+    height: 29%;
   }
   100% {
-    height: 19%;
+    height: 14%;
   }
 }
 @-moz-keyframes animation68 {
   0% {
-    height: 14%;
+    height: 15%;
   }
   50% {
-    height: 30%;
+    height: 14%;
   }
   100% {
-    height: 13%;
+    height: 18%;
   }
 }
 @keyframes animation68 {
   0% {
-    height: 16%;
+    height: 19%;
   }
   50% {
-    height: 27%;
+    height: 11%;
   }
   100% {
-    height: 17%;
+    height: 14%;
   }
 }
 .bar:nth-child(69) {
@@ -4100,21 +4114,21 @@ h5.subtitle {
 
 @-webkit-keyframes animation69 {
   0% {
-    height: 20%;
+    height: 14%;
   }
   50% {
-    height: 23%;
+    height: 22%;
   }
   100% {
-    height: 17%;
+    height: 20%;
   }
 }
 @-moz-keyframes animation69 {
   0% {
-    height: 20%;
+    height: 16%;
   }
   50% {
-    height: 30%;
+    height: 19%;
   }
   100% {
     height: 19%;
@@ -4125,10 +4139,10 @@ h5.subtitle {
     height: 11%;
   }
   50% {
-    height: 16%;
+    height: 26%;
   }
   100% {
-    height: 13%;
+    height: 17%;
   }
 }
 .bar:nth-child(70) {
@@ -4155,35 +4169,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation70 {
   0% {
-    height: 14%;
+    height: 11%;
   }
   50% {
-    height: 24%;
+    height: 26%;
   }
   100% {
-    height: 12%;
+    height: 13%;
   }
 }
 @-moz-keyframes animation70 {
   0% {
+    height: 17%;
+  }
+  50% {
+    height: 12%;
+  }
+  100% {
+    height: 19%;
+  }
+}
+@keyframes animation70 {
+  0% {
     height: 14%;
   }
   50% {
     height: 17%;
   }
   100% {
-    height: 12%;
-  }
-}
-@keyframes animation70 {
-  0% {
-    height: 12%;
-  }
-  50% {
-    height: 18%;
-  }
-  100% {
-    height: 17%;
+    height: 14%;
   }
 }
 .bar:nth-child(71) {
@@ -4210,13 +4224,13 @@ h5.subtitle {
 
 @-webkit-keyframes animation71 {
   0% {
-    height: 11%;
+    height: 18%;
   }
   50% {
-    height: 15%;
+    height: 26%;
   }
   100% {
-    height: 19%;
+    height: 18%;
   }
 }
 @-moz-keyframes animation71 {
@@ -4224,18 +4238,18 @@ h5.subtitle {
     height: 18%;
   }
   50% {
-    height: 21%;
+    height: 27%;
   }
   100% {
-    height: 19%;
+    height: 16%;
   }
 }
 @keyframes animation71 {
   0% {
-    height: 19%;
+    height: 12%;
   }
   50% {
-    height: 24%;
+    height: 21%;
   }
   100% {
     height: 12%;
@@ -4265,21 +4279,21 @@ h5.subtitle {
 
 @-webkit-keyframes animation72 {
   0% {
-    height: 12%;
-  }
-  50% {
     height: 20%;
   }
+  50% {
+    height: 15%;
+  }
   100% {
-    height: 14%;
+    height: 20%;
   }
 }
 @-moz-keyframes animation72 {
   0% {
-    height: 17%;
+    height: 19%;
   }
   50% {
-    height: 23%;
+    height: 28%;
   }
   100% {
     height: 15%;
@@ -4287,13 +4301,13 @@ h5.subtitle {
 }
 @keyframes animation72 {
   0% {
-    height: 14%;
+    height: 20%;
   }
   50% {
-    height: 18%;
+    height: 22%;
   }
   100% {
-    height: 18%;
+    height: 17%;
   }
 }
 .bar:nth-child(73) {
@@ -4320,35 +4334,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation73 {
   0% {
-    height: 15%;
+    height: 16%;
   }
   50% {
-    height: 20%;
+    height: 15%;
   }
   100% {
-    height: 20%;
+    height: 19%;
   }
 }
 @-moz-keyframes animation73 {
   0% {
-    height: 17%;
+    height: 16%;
+  }
+  50% {
+    height: 18%;
+  }
+  100% {
+    height: 12%;
+  }
+}
+@keyframes animation73 {
+  0% {
+    height: 12%;
   }
   50% {
     height: 23%;
   }
   100% {
-    height: 18%;
-  }
-}
-@keyframes animation73 {
-  0% {
-    height: 15%;
-  }
-  50% {
-    height: 20%;
-  }
-  100% {
-    height: 12%;
+    height: 17%;
   }
 }
 .bar:nth-child(74) {
@@ -4375,35 +4389,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation74 {
   0% {
-    height: 15%;
+    height: 17%;
   }
   50% {
-    height: 27%;
+    height: 17%;
   }
   100% {
-    height: 19%;
+    height: 20%;
   }
 }
 @-moz-keyframes animation74 {
   0% {
-    height: 20%;
+    height: 15%;
   }
   50% {
-    height: 12%;
+    height: 13%;
   }
   100% {
-    height: 12%;
+    height: 20%;
   }
 }
 @keyframes animation74 {
   0% {
-    height: 12%;
+    height: 20%;
   }
   50% {
-    height: 27%;
+    height: 11%;
   }
   100% {
-    height: 13%;
+    height: 20%;
   }
 }
 .bar:nth-child(75) {
@@ -4430,21 +4444,21 @@ h5.subtitle {
 
 @-webkit-keyframes animation75 {
   0% {
-    height: 20%;
+    height: 13%;
   }
   50% {
     height: 11%;
   }
   100% {
-    height: 18%;
+    height: 11%;
   }
 }
 @-moz-keyframes animation75 {
   0% {
-    height: 18%;
+    height: 12%;
   }
   50% {
-    height: 29%;
+    height: 17%;
   }
   100% {
     height: 12%;
@@ -4455,10 +4469,10 @@ h5.subtitle {
     height: 11%;
   }
   50% {
-    height: 11%;
+    height: 22%;
   }
   100% {
-    height: 17%;
+    height: 20%;
   }
 }
 .bar:nth-child(76) {
@@ -4485,21 +4499,21 @@ h5.subtitle {
 
 @-webkit-keyframes animation76 {
   0% {
-    height: 20%;
+    height: 16%;
   }
   50% {
-    height: 28%;
+    height: 30%;
   }
   100% {
-    height: 17%;
+    height: 20%;
   }
 }
 @-moz-keyframes animation76 {
   0% {
-    height: 14%;
+    height: 12%;
   }
   50% {
-    height: 28%;
+    height: 27%;
   }
   100% {
     height: 19%;
@@ -4507,13 +4521,13 @@ h5.subtitle {
 }
 @keyframes animation76 {
   0% {
-    height: 19%;
+    height: 20%;
   }
   50% {
-    height: 26%;
+    height: 14%;
   }
   100% {
-    height: 11%;
+    height: 14%;
   }
 }
 .bar:nth-child(77) {
@@ -4540,35 +4554,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation77 {
   0% {
-    height: 16%;
+    height: 14%;
   }
   50% {
-    height: 30%;
+    height: 21%;
   }
   100% {
-    height: 20%;
+    height: 17%;
   }
 }
 @-moz-keyframes animation77 {
   0% {
-    height: 12%;
+    height: 20%;
   }
   50% {
-    height: 17%;
+    height: 19%;
   }
   100% {
-    height: 12%;
+    height: 18%;
   }
 }
 @keyframes animation77 {
   0% {
-    height: 15%;
+    height: 14%;
   }
   50% {
-    height: 13%;
+    height: 18%;
   }
   100% {
-    height: 19%;
+    height: 13%;
   }
 }
 .bar:nth-child(78) {
@@ -4595,35 +4609,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation78 {
   0% {
-    height: 18%;
+    height: 19%;
   }
   50% {
-    height: 12%;
+    height: 27%;
   }
   100% {
-    height: 20%;
+    height: 14%;
   }
 }
 @-moz-keyframes animation78 {
   0% {
-    height: 15%;
+    height: 14%;
   }
   50% {
-    height: 26%;
+    height: 30%;
   }
   100% {
-    height: 16%;
+    height: 13%;
   }
 }
 @keyframes animation78 {
   0% {
-    height: 11%;
+    height: 18%;
   }
   50% {
-    height: 13%;
+    height: 21%;
   }
   100% {
-    height: 20%;
+    height: 14%;
   }
 }
 .bar:nth-child(79) {
@@ -4650,35 +4664,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation79 {
   0% {
-    height: 15%;
+    height: 13%;
   }
   50% {
-    height: 28%;
+    height: 11%;
   }
   100% {
-    height: 12%;
+    height: 19%;
   }
 }
 @-moz-keyframes animation79 {
   0% {
-    height: 16%;
+    height: 19%;
   }
   50% {
-    height: 30%;
+    height: 20%;
   }
   100% {
-    height: 14%;
+    height: 20%;
   }
 }
 @keyframes animation79 {
   0% {
-    height: 19%;
+    height: 12%;
   }
   50% {
     height: 19%;
   }
   100% {
-    height: 20%;
+    height: 15%;
   }
 }
 .bar:nth-child(80) {
@@ -4705,35 +4719,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation80 {
   0% {
-    height: 17%;
-  }
-  50% {
-    height: 23%;
-  }
-  100% {
-    height: 19%;
-  }
-}
-@-moz-keyframes animation80 {
-  0% {
     height: 20%;
   }
   50% {
-    height: 17%;
+    height: 18%;
   }
   100% {
     height: 12%;
   }
 }
-@keyframes animation80 {
+@-moz-keyframes animation80 {
   0% {
-    height: 18%;
+    height: 14%;
   }
   50% {
-    height: 28%;
+    height: 20%;
   }
   100% {
-    height: 19%;
+    height: 16%;
+  }
+}
+@keyframes animation80 {
+  0% {
+    height: 20%;
+  }
+  50% {
+    height: 29%;
+  }
+  100% {
+    height: 17%;
   }
 }
 .bar:nth-child(81) {
@@ -4760,10 +4774,10 @@ h5.subtitle {
 
 @-webkit-keyframes animation81 {
   0% {
-    height: 14%;
+    height: 18%;
   }
   50% {
-    height: 25%;
+    height: 12%;
   }
   100% {
     height: 19%;
@@ -4774,21 +4788,21 @@ h5.subtitle {
     height: 18%;
   }
   50% {
-    height: 20%;
+    height: 23%;
   }
   100% {
-    height: 20%;
+    height: 14%;
   }
 }
 @keyframes animation81 {
   0% {
-    height: 16%;
+    height: 13%;
   }
   50% {
-    height: 20%;
+    height: 27%;
   }
   100% {
-    height: 15%;
+    height: 11%;
   }
 }
 .bar:nth-child(82) {
@@ -4815,35 +4829,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation82 {
   0% {
-    height: 12%;
+    height: 14%;
   }
   50% {
-    height: 20%;
+    height: 23%;
   }
   100% {
-    height: 13%;
+    height: 12%;
   }
 }
 @-moz-keyframes animation82 {
   0% {
-    height: 14%;
+    height: 17%;
   }
   50% {
-    height: 25%;
+    height: 24%;
   }
   100% {
-    height: 13%;
+    height: 17%;
   }
 }
 @keyframes animation82 {
   0% {
-    height: 19%;
+    height: 16%;
   }
   50% {
-    height: 18%;
+    height: 12%;
   }
   100% {
-    height: 11%;
+    height: 19%;
   }
 }
 .bar:nth-child(83) {
@@ -4870,35 +4884,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation83 {
   0% {
-    height: 14%;
-  }
-  50% {
     height: 16%;
   }
+  50% {
+    height: 19%;
+  }
   100% {
-    height: 15%;
+    height: 19%;
   }
 }
 @-moz-keyframes animation83 {
   0% {
-    height: 12%;
+    height: 18%;
   }
   50% {
-    height: 15%;
+    height: 24%;
   }
   100% {
-    height: 20%;
+    height: 12%;
   }
 }
 @keyframes animation83 {
   0% {
-    height: 14%;
+    height: 13%;
   }
   50% {
-    height: 18%;
+    height: 11%;
   }
   100% {
-    height: 20%;
+    height: 11%;
   }
 }
 .bar:nth-child(84) {
@@ -4925,10 +4939,10 @@ h5.subtitle {
 
 @-webkit-keyframes animation84 {
   0% {
-    height: 16%;
+    height: 12%;
   }
   50% {
-    height: 25%;
+    height: 29%;
   }
   100% {
     height: 13%;
@@ -4939,21 +4953,21 @@ h5.subtitle {
     height: 11%;
   }
   50% {
-    height: 11%;
+    height: 16%;
   }
   100% {
-    height: 13%;
+    height: 19%;
   }
 }
 @keyframes animation84 {
   0% {
-    height: 17%;
+    height: 18%;
   }
   50% {
-    height: 16%;
+    height: 28%;
   }
   100% {
-    height: 14%;
+    height: 13%;
   }
 }
 .bar:nth-child(85) {
@@ -4980,7 +4994,7 @@ h5.subtitle {
 
 @-webkit-keyframes animation85 {
   0% {
-    height: 11%;
+    height: 18%;
   }
   50% {
     height: 25%;
@@ -4991,24 +5005,24 @@ h5.subtitle {
 }
 @-moz-keyframes animation85 {
   0% {
-    height: 18%;
+    height: 15%;
   }
   50% {
-    height: 14%;
+    height: 15%;
   }
   100% {
-    height: 18%;
+    height: 16%;
   }
 }
 @keyframes animation85 {
   0% {
-    height: 13%;
+    height: 14%;
   }
   50% {
-    height: 13%;
+    height: 30%;
   }
   100% {
-    height: 13%;
+    height: 16%;
   }
 }
 .bar:nth-child(86) {
@@ -5035,35 +5049,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation86 {
   0% {
-    height: 18%;
+    height: 17%;
   }
   50% {
-    height: 26%;
+    height: 24%;
   }
   100% {
-    height: 11%;
+    height: 20%;
   }
 }
 @-moz-keyframes animation86 {
   0% {
-    height: 16%;
+    height: 15%;
   }
   50% {
-    height: 29%;
+    height: 12%;
   }
   100% {
-    height: 11%;
+    height: 13%;
   }
 }
 @keyframes animation86 {
   0% {
-    height: 14%;
+    height: 12%;
   }
   50% {
-    height: 19%;
+    height: 22%;
   }
   100% {
-    height: 11%;
+    height: 13%;
   }
 }
 .bar:nth-child(87) {
@@ -5090,35 +5104,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation87 {
   0% {
-    height: 19%;
+    height: 18%;
+  }
+  50% {
+    height: 25%;
+  }
+  100% {
+    height: 13%;
+  }
+}
+@-moz-keyframes animation87 {
+  0% {
+    height: 11%;
   }
   50% {
     height: 28%;
   }
   100% {
-    height: 20%;
-  }
-}
-@-moz-keyframes animation87 {
-  0% {
-    height: 16%;
-  }
-  50% {
-    height: 24%;
-  }
-  100% {
-    height: 12%;
+    height: 14%;
   }
 }
 @keyframes animation87 {
   0% {
-    height: 17%;
+    height: 13%;
   }
   50% {
-    height: 22%;
+    height: 29%;
   }
   100% {
-    height: 20%;
+    height: 19%;
   }
 }
 .bar:nth-child(88) {
@@ -5145,35 +5159,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation88 {
   0% {
-    height: 18%;
+    height: 16%;
   }
   50% {
     height: 13%;
   }
   100% {
-    height: 11%;
+    height: 14%;
   }
 }
 @-moz-keyframes animation88 {
   0% {
-    height: 15%;
+    height: 14%;
   }
   50% {
-    height: 18%;
+    height: 26%;
   }
   100% {
-    height: 16%;
+    height: 13%;
   }
 }
 @keyframes animation88 {
   0% {
-    height: 16%;
+    height: 12%;
   }
   50% {
-    height: 15%;
+    height: 27%;
   }
   100% {
-    height: 20%;
+    height: 16%;
   }
 }
 .bar:nth-child(89) {
@@ -5203,15 +5217,15 @@ h5.subtitle {
     height: 17%;
   }
   50% {
-    height: 18%;
+    height: 29%;
   }
   100% {
-    height: 18%;
+    height: 13%;
   }
 }
 @-moz-keyframes animation89 {
   0% {
-    height: 19%;
+    height: 17%;
   }
   50% {
     height: 27%;
@@ -5222,13 +5236,13 @@ h5.subtitle {
 }
 @keyframes animation89 {
   0% {
-    height: 16%;
+    height: 14%;
   }
   50% {
-    height: 29%;
+    height: 12%;
   }
   100% {
-    height: 17%;
+    height: 16%;
   }
 }
 .bar:nth-child(90) {
@@ -5255,35 +5269,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation90 {
   0% {
-    height: 17%;
+    height: 12%;
   }
   50% {
-    height: 29%;
+    height: 14%;
   }
   100% {
-    height: 12%;
+    height: 11%;
   }
 }
 @-moz-keyframes animation90 {
   0% {
-    height: 20%;
+    height: 19%;
   }
   50% {
-    height: 20%;
+    height: 16%;
   }
   100% {
-    height: 13%;
+    height: 11%;
   }
 }
 @keyframes animation90 {
   0% {
-    height: 13%;
+    height: 15%;
   }
   50% {
-    height: 12%;
+    height: 25%;
   }
   100% {
-    height: 13%;
+    height: 16%;
   }
 }
 .bar:nth-child(91) {
@@ -5310,35 +5324,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation91 {
   0% {
-    height: 14%;
+    height: 20%;
   }
   50% {
     height: 28%;
   }
   100% {
-    height: 12%;
+    height: 18%;
   }
 }
 @-moz-keyframes animation91 {
   0% {
-    height: 12%;
-  }
-  50% {
-    height: 23%;
-  }
-  100% {
-    height: 17%;
-  }
-}
-@keyframes animation91 {
-  0% {
-    height: 20%;
+    height: 19%;
   }
   50% {
     height: 13%;
   }
   100% {
-    height: 18%;
+    height: 11%;
+  }
+}
+@keyframes animation91 {
+  0% {
+    height: 14%;
+  }
+  50% {
+    height: 11%;
+  }
+  100% {
+    height: 12%;
   }
 }
 .bar:nth-child(92) {
@@ -5368,10 +5382,10 @@ h5.subtitle {
     height: 13%;
   }
   50% {
-    height: 11%;
+    height: 24%;
   }
   100% {
-    height: 18%;
+    height: 19%;
   }
 }
 @-moz-keyframes animation92 {
@@ -5379,10 +5393,10 @@ h5.subtitle {
     height: 19%;
   }
   50% {
-    height: 23%;
+    height: 20%;
   }
   100% {
-    height: 16%;
+    height: 15%;
   }
 }
 @keyframes animation92 {
@@ -5390,7 +5404,7 @@ h5.subtitle {
     height: 12%;
   }
   50% {
-    height: 29%;
+    height: 27%;
   }
   100% {
     height: 20%;
@@ -5423,32 +5437,32 @@ h5.subtitle {
     height: 16%;
   }
   50% {
-    height: 27%;
+    height: 24%;
   }
   100% {
-    height: 14%;
+    height: 18%;
   }
 }
 @-moz-keyframes animation93 {
   0% {
-    height: 19%;
+    height: 16%;
   }
   50% {
-    height: 14%;
+    height: 18%;
   }
   100% {
-    height: 11%;
+    height: 16%;
   }
 }
 @keyframes animation93 {
   0% {
-    height: 12%;
+    height: 18%;
   }
   50% {
-    height: 28%;
+    height: 23%;
   }
   100% {
-    height: 19%;
+    height: 17%;
   }
 }
 .bar:nth-child(94) {
@@ -5475,35 +5489,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation94 {
   0% {
-    height: 11%;
+    height: 20%;
   }
   50% {
-    height: 25%;
+    height: 28%;
   }
   100% {
-    height: 18%;
+    height: 14%;
   }
 }
 @-moz-keyframes animation94 {
   0% {
-    height: 20%;
+    height: 12%;
   }
   50% {
-    height: 14%;
+    height: 29%;
   }
   100% {
-    height: 12%;
+    height: 19%;
   }
 }
 @keyframes animation94 {
   0% {
-    height: 12%;
+    height: 19%;
   }
   50% {
-    height: 25%;
+    height: 30%;
   }
   100% {
-    height: 17%;
+    height: 15%;
   }
 }
 .bar:nth-child(95) {
@@ -5530,35 +5544,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation95 {
   0% {
-    height: 16%;
+    height: 14%;
   }
   50% {
-    height: 23%;
+    height: 25%;
   }
   100% {
-    height: 19%;
+    height: 18%;
   }
 }
 @-moz-keyframes animation95 {
   0% {
-    height: 16%;
+    height: 15%;
   }
   50% {
-    height: 27%;
+    height: 22%;
   }
   100% {
-    height: 13%;
+    height: 14%;
   }
 }
 @keyframes animation95 {
   0% {
-    height: 16%;
+    height: 20%;
   }
   50% {
     height: 26%;
   }
   100% {
-    height: 13%;
+    height: 15%;
   }
 }
 .bar:nth-child(96) {
@@ -5585,24 +5599,24 @@ h5.subtitle {
 
 @-webkit-keyframes animation96 {
   0% {
-    height: 15%;
+    height: 13%;
   }
   50% {
-    height: 25%;
+    height: 21%;
   }
   100% {
-    height: 20%;
+    height: 15%;
   }
 }
 @-moz-keyframes animation96 {
   0% {
-    height: 12%;
+    height: 19%;
   }
   50% {
-    height: 25%;
+    height: 21%;
   }
   100% {
-    height: 11%;
+    height: 16%;
   }
 }
 @keyframes animation96 {
@@ -5610,10 +5624,10 @@ h5.subtitle {
     height: 19%;
   }
   50% {
-    height: 29%;
+    height: 12%;
   }
   100% {
-    height: 19%;
+    height: 14%;
   }
 }
 .bar:nth-child(97) {
@@ -5640,10 +5654,10 @@ h5.subtitle {
 
 @-webkit-keyframes animation97 {
   0% {
-    height: 11%;
+    height: 14%;
   }
   50% {
-    height: 23%;
+    height: 18%;
   }
   100% {
     height: 13%;
@@ -5654,21 +5668,21 @@ h5.subtitle {
     height: 13%;
   }
   50% {
-    height: 11%;
+    height: 28%;
   }
   100% {
-    height: 19%;
+    height: 13%;
   }
 }
 @keyframes animation97 {
   0% {
-    height: 20%;
+    height: 17%;
   }
   50% {
-    height: 18%;
+    height: 29%;
   }
   100% {
-    height: 20%;
+    height: 14%;
   }
 }
 .bar:nth-child(98) {
@@ -5701,29 +5715,29 @@ h5.subtitle {
     height: 15%;
   }
   100% {
-    height: 19%;
+    height: 15%;
   }
 }
 @-moz-keyframes animation98 {
   0% {
-    height: 14%;
+    height: 20%;
   }
   50% {
     height: 12%;
   }
   100% {
-    height: 19%;
+    height: 14%;
   }
 }
 @keyframes animation98 {
   0% {
-    height: 17%;
+    height: 18%;
   }
   50% {
-    height: 16%;
+    height: 22%;
   }
   100% {
-    height: 15%;
+    height: 19%;
   }
 }
 .bar:nth-child(99) {
@@ -5750,35 +5764,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation99 {
   0% {
-    height: 14%;
+    height: 19%;
   }
   50% {
-    height: 28%;
+    height: 13%;
+  }
+  100% {
+    height: 14%;
+  }
+}
+@-moz-keyframes animation99 {
+  0% {
+    height: 15%;
+  }
+  50% {
+    height: 27%;
   }
   100% {
     height: 16%;
   }
 }
-@-moz-keyframes animation99 {
+@keyframes animation99 {
   0% {
     height: 17%;
   }
   50% {
-    height: 14%;
+    height: 17%;
   }
   100% {
-    height: 19%;
-  }
-}
-@keyframes animation99 {
-  0% {
-    height: 19%;
-  }
-  50% {
-    height: 25%;
-  }
-  100% {
-    height: 20%;
+    height: 18%;
   }
 }
 .bar:nth-child(100) {
@@ -5805,35 +5819,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation100 {
   0% {
-    height: 17%;
-  }
-  50% {
     height: 20%;
   }
+  50% {
+    height: 27%;
+  }
   100% {
-    height: 16%;
+    height: 20%;
   }
 }
 @-moz-keyframes animation100 {
   0% {
-    height: 13%;
+    height: 18%;
   }
   50% {
-    height: 17%;
+    height: 25%;
   }
   100% {
-    height: 13%;
+    height: 15%;
   }
 }
 @keyframes animation100 {
   0% {
-    height: 16%;
+    height: 15%;
   }
   50% {
-    height: 11%;
+    height: 21%;
   }
   100% {
-    height: 15%;
+    height: 19%;
   }
 }
 .bar:nth-child(101) {
@@ -5860,35 +5874,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation101 {
   0% {
-    height: 19%;
+    height: 16%;
   }
   50% {
-    height: 18%;
+    height: 25%;
   }
   100% {
-    height: 15%;
+    height: 19%;
   }
 }
 @-moz-keyframes animation101 {
   0% {
-    height: 19%;
+    height: 14%;
   }
   50% {
-    height: 28%;
+    height: 23%;
   }
   100% {
-    height: 13%;
+    height: 12%;
   }
 }
 @keyframes animation101 {
   0% {
-    height: 11%;
+    height: 20%;
   }
   50% {
-    height: 28%;
+    height: 13%;
   }
   100% {
-    height: 13%;
+    height: 20%;
   }
 }
 .bar:nth-child(102) {
@@ -5915,21 +5929,21 @@ h5.subtitle {
 
 @-webkit-keyframes animation102 {
   0% {
-    height: 12%;
+    height: 16%;
   }
   50% {
-    height: 23%;
+    height: 29%;
   }
   100% {
-    height: 18%;
+    height: 17%;
   }
 }
 @-moz-keyframes animation102 {
   0% {
-    height: 13%;
+    height: 17%;
   }
   50% {
-    height: 15%;
+    height: 29%;
   }
   100% {
     height: 16%;
@@ -5937,13 +5951,13 @@ h5.subtitle {
 }
 @keyframes animation102 {
   0% {
-    height: 17%;
+    height: 19%;
   }
   50% {
-    height: 16%;
+    height: 24%;
   }
   100% {
-    height: 16%;
+    height: 12%;
   }
 }
 .bar:nth-child(103) {
@@ -5970,7 +5984,7 @@ h5.subtitle {
 
 @-webkit-keyframes animation103 {
   0% {
-    height: 13%;
+    height: 17%;
   }
   50% {
     height: 15%;
@@ -5981,24 +5995,24 @@ h5.subtitle {
 }
 @-moz-keyframes animation103 {
   0% {
-    height: 20%;
-  }
-  50% {
-    height: 26%;
-  }
-  100% {
-    height: 14%;
-  }
-}
-@keyframes animation103 {
-  0% {
     height: 13%;
   }
   50% {
     height: 18%;
   }
   100% {
-    height: 17%;
+    height: 13%;
+  }
+}
+@keyframes animation103 {
+  0% {
+    height: 14%;
+  }
+  50% {
+    height: 14%;
+  }
+  100% {
+    height: 16%;
   }
 }
 .bar:nth-child(104) {
@@ -6025,13 +6039,13 @@ h5.subtitle {
 
 @-webkit-keyframes animation104 {
   0% {
-    height: 17%;
+    height: 14%;
   }
   50% {
     height: 15%;
   }
   100% {
-    height: 20%;
+    height: 11%;
   }
 }
 @-moz-keyframes animation104 {
@@ -6039,21 +6053,21 @@ h5.subtitle {
     height: 16%;
   }
   50% {
-    height: 20%;
+    height: 19%;
   }
   100% {
-    height: 20%;
+    height: 19%;
   }
 }
 @keyframes animation104 {
   0% {
-    height: 16%;
+    height: 12%;
   }
   50% {
-    height: 30%;
+    height: 12%;
   }
   100% {
-    height: 19%;
+    height: 15%;
   }
 }
 .bar:nth-child(105) {
@@ -6080,10 +6094,10 @@ h5.subtitle {
 
 @-webkit-keyframes animation105 {
   0% {
-    height: 16%;
+    height: 11%;
   }
   50% {
-    height: 16%;
+    height: 15%;
   }
   100% {
     height: 18%;
@@ -6091,21 +6105,21 @@ h5.subtitle {
 }
 @-moz-keyframes animation105 {
   0% {
-    height: 14%;
+    height: 11%;
   }
   50% {
-    height: 16%;
+    height: 30%;
   }
   100% {
-    height: 13%;
+    height: 11%;
   }
 }
 @keyframes animation105 {
   0% {
-    height: 13%;
+    height: 14%;
   }
   50% {
-    height: 20%;
+    height: 23%;
   }
   100% {
     height: 15%;
@@ -6138,32 +6152,32 @@ h5.subtitle {
     height: 11%;
   }
   50% {
-    height: 23%;
+    height: 11%;
   }
   100% {
-    height: 16%;
+    height: 19%;
   }
 }
 @-moz-keyframes animation106 {
   0% {
-    height: 12%;
+    height: 14%;
   }
   50% {
-    height: 18%;
+    height: 26%;
   }
   100% {
-    height: 18%;
+    height: 12%;
   }
 }
 @keyframes animation106 {
   0% {
-    height: 12%;
+    height: 18%;
   }
   50% {
-    height: 14%;
+    height: 28%;
   }
   100% {
-    height: 15%;
+    height: 19%;
   }
 }
 .bar:nth-child(107) {
@@ -6190,24 +6204,24 @@ h5.subtitle {
 
 @-webkit-keyframes animation107 {
   0% {
-    height: 19%;
+    height: 14%;
   }
   50% {
-    height: 24%;
+    height: 19%;
   }
   100% {
-    height: 11%;
+    height: 18%;
   }
 }
 @-moz-keyframes animation107 {
   0% {
-    height: 13%;
+    height: 16%;
   }
   50% {
-    height: 13%;
+    height: 18%;
   }
   100% {
-    height: 16%;
+    height: 15%;
   }
 }
 @keyframes animation107 {
@@ -6215,10 +6229,10 @@ h5.subtitle {
     height: 13%;
   }
   50% {
-    height: 18%;
+    height: 29%;
   }
   100% {
-    height: 15%;
+    height: 19%;
   }
 }
 .bar:nth-child(108) {
@@ -6245,32 +6259,32 @@ h5.subtitle {
 
 @-webkit-keyframes animation108 {
   0% {
-    height: 13%;
+    height: 14%;
   }
   50% {
-    height: 30%;
+    height: 11%;
   }
   100% {
-    height: 15%;
+    height: 12%;
   }
 }
 @-moz-keyframes animation108 {
   0% {
-    height: 18%;
+    height: 13%;
   }
   50% {
-    height: 14%;
+    height: 20%;
   }
   100% {
-    height: 13%;
+    height: 12%;
   }
 }
 @keyframes animation108 {
   0% {
-    height: 16%;
+    height: 17%;
   }
   50% {
-    height: 19%;
+    height: 14%;
   }
   100% {
     height: 16%;
@@ -6300,35 +6314,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation109 {
   0% {
-    height: 19%;
+    height: 20%;
   }
   50% {
-    height: 16%;
+    height: 13%;
   }
   100% {
-    height: 12%;
+    height: 20%;
   }
 }
 @-moz-keyframes animation109 {
   0% {
-    height: 17%;
-  }
-  50% {
-    height: 13%;
-  }
-  100% {
-    height: 13%;
-  }
-}
-@keyframes animation109 {
-  0% {
-    height: 19%;
+    height: 20%;
   }
   50% {
     height: 11%;
   }
   100% {
     height: 16%;
+  }
+}
+@keyframes animation109 {
+  0% {
+    height: 13%;
+  }
+  50% {
+    height: 18%;
+  }
+  100% {
+    height: 20%;
   }
 }
 .bar:nth-child(110) {
@@ -6355,32 +6369,32 @@ h5.subtitle {
 
 @-webkit-keyframes animation110 {
   0% {
-    height: 19%;
+    height: 16%;
   }
   50% {
-    height: 25%;
+    height: 14%;
   }
   100% {
-    height: 15%;
+    height: 19%;
   }
 }
 @-moz-keyframes animation110 {
   0% {
-    height: 19%;
+    height: 13%;
   }
   50% {
-    height: 23%;
+    height: 29%;
   }
   100% {
-    height: 14%;
+    height: 12%;
   }
 }
 @keyframes animation110 {
   0% {
-    height: 17%;
+    height: 15%;
   }
   50% {
-    height: 27%;
+    height: 20%;
   }
   100% {
     height: 19%;
@@ -6410,10 +6424,10 @@ h5.subtitle {
 
 @-webkit-keyframes animation111 {
   0% {
-    height: 19%;
+    height: 17%;
   }
   50% {
-    height: 18%;
+    height: 11%;
   }
   100% {
     height: 19%;
@@ -6421,24 +6435,24 @@ h5.subtitle {
 }
 @-moz-keyframes animation111 {
   0% {
-    height: 13%;
+    height: 14%;
   }
   50% {
-    height: 17%;
+    height: 13%;
   }
   100% {
-    height: 13%;
+    height: 14%;
   }
 }
 @keyframes animation111 {
   0% {
-    height: 16%;
+    height: 18%;
   }
   50% {
-    height: 22%;
+    height: 14%;
   }
   100% {
-    height: 14%;
+    height: 16%;
   }
 }
 .bar:nth-child(112) {
@@ -6465,35 +6479,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation112 {
   0% {
-    height: 18%;
+    height: 12%;
+  }
+  50% {
+    height: 20%;
+  }
+  100% {
+    height: 17%;
+  }
+}
+@-moz-keyframes animation112 {
+  0% {
+    height: 11%;
+  }
+  50% {
+    height: 24%;
+  }
+  100% {
+    height: 12%;
+  }
+}
+@keyframes animation112 {
+  0% {
+    height: 14%;
   }
   50% {
     height: 27%;
   }
   100% {
-    height: 19%;
-  }
-}
-@-moz-keyframes animation112 {
-  0% {
-    height: 16%;
-  }
-  50% {
-    height: 29%;
-  }
-  100% {
-    height: 19%;
-  }
-}
-@keyframes animation112 {
-  0% {
-    height: 16%;
-  }
-  50% {
-    height: 17%;
-  }
-  100% {
-    height: 19%;
+    height: 18%;
   }
 }
 .bar:nth-child(113) {
@@ -6520,35 +6534,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation113 {
   0% {
+    height: 13%;
+  }
+  50% {
     height: 20%;
+  }
+  100% {
+    height: 18%;
+  }
+}
+@-moz-keyframes animation113 {
+  0% {
+    height: 12%;
+  }
+  50% {
+    height: 11%;
+  }
+  100% {
+    height: 13%;
+  }
+}
+@keyframes animation113 {
+  0% {
+    height: 12%;
   }
   50% {
     height: 27%;
   }
   100% {
-    height: 15%;
-  }
-}
-@-moz-keyframes animation113 {
-  0% {
-    height: 19%;
-  }
-  50% {
-    height: 21%;
-  }
-  100% {
-    height: 12%;
-  }
-}
-@keyframes animation113 {
-  0% {
     height: 11%;
-  }
-  50% {
-    height: 19%;
-  }
-  100% {
-    height: 20%;
   }
 }
 .bar:nth-child(114) {
@@ -6575,35 +6589,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation114 {
   0% {
-    height: 14%;
-  }
-  50% {
     height: 17%;
   }
+  50% {
+    height: 22%;
+  }
   100% {
-    height: 12%;
+    height: 19%;
   }
 }
 @-moz-keyframes animation114 {
   0% {
-    height: 14%;
+    height: 16%;
   }
   50% {
-    height: 15%;
+    height: 29%;
   }
   100% {
-    height: 14%;
+    height: 11%;
   }
 }
 @keyframes animation114 {
   0% {
-    height: 19%;
+    height: 15%;
   }
   50% {
-    height: 28%;
+    height: 12%;
   }
   100% {
-    height: 20%;
+    height: 11%;
   }
 }
 .bar:nth-child(115) {
@@ -6630,35 +6644,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation115 {
   0% {
-    height: 17%;
+    height: 13%;
   }
   50% {
-    height: 20%;
+    height: 17%;
   }
   100% {
-    height: 15%;
+    height: 18%;
   }
 }
 @-moz-keyframes animation115 {
   0% {
-    height: 15%;
+    height: 16%;
   }
   50% {
-    height: 12%;
+    height: 18%;
   }
   100% {
-    height: 16%;
+    height: 20%;
   }
 }
 @keyframes animation115 {
   0% {
-    height: 18%;
+    height: 12%;
   }
   50% {
-    height: 16%;
+    height: 19%;
   }
   100% {
-    height: 13%;
+    height: 19%;
   }
 }
 .bar:nth-child(116) {
@@ -6685,32 +6699,32 @@ h5.subtitle {
 
 @-webkit-keyframes animation116 {
   0% {
-    height: 15%;
+    height: 18%;
   }
   50% {
     height: 21%;
   }
   100% {
-    height: 20%;
+    height: 17%;
   }
 }
 @-moz-keyframes animation116 {
   0% {
-    height: 20%;
+    height: 16%;
   }
   50% {
-    height: 28%;
+    height: 16%;
   }
   100% {
-    height: 11%;
+    height: 17%;
   }
 }
 @keyframes animation116 {
   0% {
-    height: 12%;
+    height: 17%;
   }
   50% {
-    height: 13%;
+    height: 14%;
   }
   100% {
     height: 16%;
@@ -6740,35 +6754,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation117 {
   0% {
-    height: 11%;
+    height: 16%;
   }
   50% {
-    height: 28%;
+    height: 24%;
   }
   100% {
-    height: 11%;
+    height: 16%;
   }
 }
 @-moz-keyframes animation117 {
   0% {
-    height: 11%;
+    height: 14%;
   }
   50% {
-    height: 27%;
+    height: 15%;
   }
   100% {
-    height: 15%;
+    height: 13%;
   }
 }
 @keyframes animation117 {
   0% {
-    height: 12%;
+    height: 14%;
   }
   50% {
-    height: 16%;
+    height: 26%;
   }
   100% {
-    height: 20%;
+    height: 15%;
   }
 }
 .bar:nth-child(118) {
@@ -6795,35 +6809,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation118 {
   0% {
-    height: 16%;
+    height: 13%;
   }
   50% {
-    height: 16%;
+    height: 13%;
   }
   100% {
-    height: 20%;
+    height: 17%;
   }
 }
 @-moz-keyframes animation118 {
   0% {
-    height: 13%;
+    height: 11%;
   }
   50% {
-    height: 11%;
+    height: 22%;
   }
   100% {
-    height: 11%;
+    height: 14%;
   }
 }
 @keyframes animation118 {
   0% {
-    height: 12%;
+    height: 19%;
   }
   50% {
-    height: 28%;
+    height: 25%;
   }
   100% {
-    height: 20%;
+    height: 17%;
   }
 }
 .bar:nth-child(119) {
@@ -6853,32 +6867,32 @@ h5.subtitle {
     height: 14%;
   }
   50% {
-    height: 21%;
+    height: 11%;
   }
   100% {
-    height: 15%;
+    height: 18%;
   }
 }
 @-moz-keyframes animation119 {
   0% {
-    height: 20%;
+    height: 19%;
   }
   50% {
-    height: 28%;
+    height: 29%;
   }
   100% {
-    height: 16%;
+    height: 20%;
   }
 }
 @keyframes animation119 {
   0% {
-    height: 16%;
+    height: 15%;
   }
   50% {
-    height: 14%;
+    height: 24%;
   }
   100% {
-    height: 14%;
+    height: 17%;
   }
 }
 .bar:nth-child(120) {
@@ -6905,35 +6919,35 @@ h5.subtitle {
 
 @-webkit-keyframes animation120 {
   0% {
-    height: 19%;
+    height: 14%;
   }
   50% {
-    height: 27%;
+    height: 25%;
+  }
+  100% {
+    height: 14%;
+  }
+}
+@-moz-keyframes animation120 {
+  0% {
+    height: 20%;
+  }
+  50% {
+    height: 14%;
   }
   100% {
     height: 16%;
   }
 }
-@-moz-keyframes animation120 {
-  0% {
-    height: 11%;
-  }
-  50% {
-    height: 21%;
-  }
-  100% {
-    height: 19%;
-  }
-}
 @keyframes animation120 {
   0% {
-    height: 20%;
+    height: 18%;
   }
   50% {
-    height: 15%;
+    height: 17%;
   }
   100% {
-    height: 13%;
+    height: 11%;
   }
 }
 @keyframes circle-anim {
@@ -6948,8 +6962,8 @@ h5.subtitle {
 }
 @media (min-width: 576px) {
   .player {
-    max-width: 500px;
-    max-height: 500px;
+    width: 500px;
+    height: 500px;
   }
 
   .title, .subtitle {

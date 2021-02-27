@@ -180,6 +180,22 @@ input[type=range][orient=vertical].vslider__scale::-moz-range-track {
   background-color: #9a905d;
 }
 
+/* Safari (mobile) */
+
+input[type=range]::-webkit-slider-runnable-track {
+  /* margin-left: -4px; */
+}
+
+input[type=range]::-webkit-slider-thumb {
+    
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #9a905d;
+    /* margin-left: -4px; */
+}
+
 .live {
   background: #cacaca;
   padding: 5px;
