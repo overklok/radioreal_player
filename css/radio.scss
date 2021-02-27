@@ -76,8 +76,6 @@ body::before {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  width: 400px;
-  height: 400px;
   border-radius: 30px;
 
   background-color: #ffffff;
@@ -414,8 +412,7 @@ $elements: 121;
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
   .player {
-    width: 500px;
-    height: 500px;
+    
   }
 
   .title, .subtitle {
@@ -434,8 +431,7 @@ $elements: 121;
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .player {
-    width: 650px;
-    height: 650px;
+    
   }
 
   .title, .subtitle {
@@ -457,8 +453,7 @@ $elements: 121;
 
 @media (min-width: 768px) and (orientation: landscape) {
   .player {
-    width: 350px;
-    height: 350px;
+    
   }
 
   .title, .subtitle {
@@ -481,8 +476,7 @@ $elements: 121;
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .player {
-    width: 500px;
-    height: 500px;
+    
   }
 
   .pbar {
@@ -500,7 +494,6 @@ $elements: 121;
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .player {
-    width: 600px;
-    height: 600px;
+    
   }
 }

@@ -10,6 +10,8 @@ const __clock = document.getElementById('clock');
 const __counter = document.getElementById('counter');
 const __button = document.getElementById('button');
 const __btnstat = document.getElementById('btnstat');
+const __player = document.getElementById('player');
+const __player_wrap = __player.parentNode;
 
 var sound = undefined;
 var timer = undefined;
@@ -27,6 +29,9 @@ syncState({
     mute: false,
     live: null,
 });
+
+window.addEventListener('load', onresize);
+window.addEventListener('resize', onresize);
 
 __button.addEventListener('click', togglePlayer);
 
@@ -210,6 +215,15 @@ function onstop() {
 
 function onseek() {
     console.log('seek');
+}
+
+function onresize() {
+    const w = __player_wrap.getBoundingClientRect().width * .8,
+          w_max = __player_wrap.getBoundingClientRect().height * .8,
+          size = Math.min(w, w_max) + 'px';
+
+    player.style.height = size; 
+    player.style.width = size; 
 }
 
 function refreshListeners() {
